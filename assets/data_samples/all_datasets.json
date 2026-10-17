@@ -1,0 +1,3561 @@
+{
+  "olist": {
+    "customers": {
+      "columns": [
+        "customer_id",
+        "customer_unique_id",
+        "customer_zip_code_prefix",
+        "customer_city",
+        "customer_state"
+      ],
+      "rows": [
+        [
+          "\"000161a058600d5901f007fab4c27140\"",
+          "b0015e09bb4b6e47c52844fab5fb6638",
+          null,
+          "itapecerica",
+          "MG"
+        ],
+        [
+          "\"0002414f95344307404f0ace7a26f1d5\"",
+          "\"4893ad4ea28b2c5b3ddf4e82e79db9e6\"",
+          null,
+          "mendonca",
+          "MG"
+        ],
+        [
+          "\"000419c5494106c306a97b5635748086\"",
+          "\"14843983d4a159080f6afe4b7f346e7c\"",
+          null,
+          "niteroi",
+          "RJ"
+        ],
+        [
+          "\"00066ccbe787a588c52bd5ff404590e3\"",
+          "\"15090f48004f3b0fc18a167ef82af4db\"",
+          null,
+          "novo hamburgo",
+          "RS"
+        ],
+        [
+          "\"00104a47c29da701ce41ee52077587d9\"",
+          "\"655f4f1277487bf6c86c673de5e576a1\"",
+          null,
+          "uberlandia",
+          "MG"
+        ],
+        [
+          "\"0013280441d86a4f7a8006efdaf1b0fe\"",
+          "\"06caeba6db23a17bf9bcb3846b768387\"",
+          null,
+          "sao paulo",
+          "SP"
+        ],
+        [
+          "\"0013cd8e350a7cc76873441e431dd5ee\"",
+          "\"334fed5abcee3aa96c13f1432703e1fd\"",
+          null,
+          "sao paulo",
+          "SP"
+        ],
+        [
+          "\"001450ebb4a77efb3d68be5f7887cb1e\"",
+          "\"61f5df1a634167ff48d76d79d21226de\"",
+          null,
+          "ibiuna",
+          "SP"
+        ],
+        [
+          "\"001f150aebb5d897f2059b0460c38449\"",
+          "\"0f88eb431888ffb9d726252b7ac8cefe\"",
+          null,
+          "campo grande",
+          "MS"
+        ],
+        [
+          "\"00205ad9ba1ef4340cef86583294cf82\"",
+          "\"28a4a9aa9bd3640e1f9a9cf542cb25fd\"",
+          null,
+          "joao pessoa",
+          "PB"
+        ],
+        [
+          "\"0028ff36263a86bf679df7c863a0a0ba\"",
+          "\"0659763dba9821af49728668716e1084\"",
+          null,
+          "rio das ostras",
+          "RJ"
+        ],
+        [
+          "\"002b24cb2cd0c3e575040dbd278885e3\"",
+          "f422964d43fc7ecdc3e51443af0705f9",
+          null,
+          "campo grande",
+          "MS"
+        ],
+        [
+          "\"002ce108ccf0356ef5c8b1dce3c0ae29\"",
+          "e6ad2d9078cb28e4ac6ecef8432e74c7",
+          null,
+          "sao paulo",
+          "SP"
+        ],
+        [
+          "\"002d358e2462f87678443706cbf2eb21\"",
+          "\"5a77d3e9231351d3a4ea54c3fe824e79\"",
+          null,
+          "sao paulo",
+          "SP"
+        ],
+        [
+          "\"002d597546b2cf44428232c9f237f873\"",
+          "\"539b6ae3b5f2999db7e44c8d4dc2069f\"",
+          null,
+          "jundiai",
+          "SP"
+        ],
+        [
+          "\"002ef7e55600d44ead53f7c1644e5222\"",
+          "\"6e9b8e9f9c3fad22d6f81b2628750018\"",
+          null,
+          "juiz de fora",
+          "MG"
+        ],
+        [
+          "\"002f90a6eb386bc43bc9ba200db31a89\"",
+          "bd3001c423ef9a9092b0a5158f1ccdf6",
+          null,
+          "sao paulo",
+          "SP"
+        ],
+        [
+          "\"0031abfb953b66e998f67b09e7b11375\"",
+          "\"431af5c5638973ed6e431618f318a0a2\"",
+          null,
+          "ponta grossa",
+          "PR"
+        ],
+        [
+          "\"0031c1062edf836ef7a7a7ea758b137b\"",
+          "c087e490266509059177cb1ec7d802ba",
+          null,
+          "itaborai",
+          "RJ"
+        ],
+        [
+          "\"00331de1659c7f4fb660c8810e6de3f5\"",
+          "e1d387b30e693029c1e3d9ffe5df61e0",
+          null,
+          "sapiranga",
+          "RS"
+        ]
+      ],
+      "total_rows": 99441
+    },
+    "orders": {
+      "columns": [
+        "order_id",
+        "customer_id",
+        "order_status",
+        "order_purchase_timestamp",
+        "order_approved_at",
+        "order_delivered_carrier_date",
+        "order_delivered_customer_date",
+        "order_estimated_delivery_date"
+      ],
+      "rows": [
+        [
+          "\"00010242fe8c5a6d1ba2dd792cb16214\"",
+          "\"3ce436f183e68e07877b285a838db11a\"",
+          "delivered",
+          "2017-09-13 08:59:02",
+          "2017-09-13 09:45:35",
+          "2017-09-19 18:34:16",
+          "2017-09-20 23:43:48",
+          "2017-09-29 00:00:00"
+        ],
+        [
+          "\"00042b26cf59d7ce69dfabb4e55b4fd9\"",
+          "\"58dbd0b2d70206bf40e62cd34e84d795\"",
+          "delivered",
+          "2017-02-04 13:57:51",
+          "2017-02-04 14:10:13",
+          "2017-02-16 09:46:09",
+          "2017-03-01 16:42:31",
+          "2017-03-17 00:00:00"
+        ],
+        [
+          "\"00048cc3ae777c65dbb7d2a0634bc1ea\"",
+          "\"816cbea969fe5b689b39cfc97a506742\"",
+          "delivered",
+          "2017-05-15 21:42:34",
+          "2017-05-17 03:55:27",
+          "2017-05-17 11:05:55",
+          "2017-05-22 13:44:35",
+          "2017-06-06 00:00:00"
+        ],
+        [
+          "\"000aed2e25dbad2f9ddb70584c5a2ded\"",
+          "fff5169e583fd07fac9fec88962f189d",
+          "delivered",
+          "2018-05-11 20:33:38",
+          "2018-05-11 20:57:03",
+          "2018-05-16 14:26:00",
+          "2018-05-18 16:46:31",
+          "2018-05-22 00:00:00"
+        ],
+        [
+          "\"000e906b789b55f64edcb1f84030f90d\"",
+          "\"6a3b2fc9f270df258605e22bef19fd88\"",
+          "delivered",
+          "2017-11-21 18:54:23",
+          "2017-11-21 19:09:02",
+          "2017-11-22 20:46:54",
+          "2017-12-09 17:27:23",
+          "2017-12-07 00:00:00"
+        ],
+        [
+          "\"0011d82c4b53e22e84023405fb467e57\"",
+          "\"2013d892495e1a101d742d533d2d1119\"",
+          "delivered",
+          "2018-01-16 21:43:23",
+          "2018-01-16 21:51:25",
+          "2018-01-23 22:08:06",
+          "2018-01-26 22:14:02",
+          "2018-02-15 00:00:00"
+        ],
+        [
+          "\"0015ebb40fb17286bea51d4607c4733c\"",
+          "da43a556bf5c36a1104c473cff77de6c",
+          "delivered",
+          "2018-01-14 09:01:36",
+          "2018-01-14 09:11:24",
+          "2018-01-17 22:56:36",
+          "2018-02-01 20:29:51",
+          "2018-02-15 00:00:00"
+        ],
+        [
+          "\"0016dfedd97fc2950e388d2971d718c7\"",
+          "\"2c8b917c5d7dd720ebe36a5ed3b501ec\"",
+          "delivered",
+          "2017-04-28 19:54:40",
+          "2017-04-29 10:05:12",
+          "2017-05-16 08:40:49",
+          "2017-05-22 18:32:21",
+          "2017-06-01 00:00:00"
+        ],
+        [
+          "\"0017afd5076e074a48f1f1a4c7bac9c5\"",
+          "\"8085a9af46f619bc25966f151a362b0d\"",
+          "delivered",
+          "2017-04-06 22:16:10",
+          "2017-04-06 22:25:19",
+          "2017-04-17 13:54:37",
+          "2017-05-23 08:32:07",
+          "2017-05-19 00:00:00"
+        ],
+        [
+          "\"001e7ba991be1b19605ca0316e7130f9\"",
+          "b6a1445ee505f3a95c827e7a5188ad02",
+          "delivered",
+          "2017-03-18 11:47:37",
+          "2017-03-18 11:47:37",
+          "2017-03-20 10:14:45",
+          "2017-03-28 14:23:33",
+          "2017-04-12 00:00:00"
+        ],
+        [
+          "\"001e7cf2ad6bef3ade12ebc56ceaf0f3\"",
+          "d1684ed69f8fd574b7c344de923f379a",
+          "delivered",
+          "2018-05-19 10:29:23",
+          "2018-05-19 10:59:50",
+          "2018-05-21 14:34:00",
+          "2018-06-04 18:08:23",
+          "2018-06-05 00:00:00"
+        ],
+        [
+          "\"00254baeb6c932b0a8aeead91fbd02b5\"",
+          "ce0421a97232c2a1194cdb66cd3ebb9d",
+          "delivered",
+          "2018-05-08 21:45:54",
+          "2018-05-08 22:14:46",
+          "2018-05-09 13:51:00",
+          "2018-05-30 19:38:36",
+          "2018-06-05 00:00:00"
+        ],
+        [
+          "\"00276d5c3491fbf55305e26891040df9\"",
+          "\"54686c41e86854e35879efbd1c2cab1b\"",
+          "delivered",
+          "2018-02-13 11:47:21",
+          "2018-02-13 12:55:57",
+          "2018-02-20 23:19:10",
+          "2018-03-16 19:57:52",
+          "2018-03-22 00:00:00"
+        ],
+        [
+          "\"002955b0acc63d04f6724a31967e82bd\"",
+          "accb4b4ad075d07a833eacca116071c7",
+          "delivered",
+          "2017-12-18 13:43:54",
+          "2017-12-18 15:51:31",
+          "2017-12-19 17:51:40",
+          "2017-12-26 18:28:29",
+          "2018-01-16 00:00:00"
+        ],
+        [
+          "\"002b430ff89b3a24c31a1170acbbedea\"",
+          "\"8d69dbf0f4dcb6c90367e0877ae94732\"",
+          "delivered",
+          "2017-06-20 21:55:21",
+          "2017-06-20 22:10:14",
+          "2017-06-21 11:26:14",
+          "2017-06-29 14:57:35",
+          "2017-07-12 00:00:00"
+        ],
+        [
+          "\"002b4e6fa42cd4a22cc86abc18fe9c05\"",
+          "a5fd6dd86d703cedc9ab6be3dba12816",
+          "delivered",
+          "2018-03-11 10:24:44",
+          "2018-03-11 10:35:37",
+          "2018-03-12 19:47:30",
+          "2018-03-19 22:34:41",
+          "2018-04-06 00:00:00"
+        ],
+        [
+          "\"00378c6c981f234634c0b9d6128df6dd\"",
+          "f3476df115c5d26bdb6bfb71b5fb66af",
+          "delivered",
+          "2018-02-02 19:39:46",
+          "2018-02-02 19:50:27",
+          "2018-02-05 18:06:49",
+          "2018-02-26 21:36:00",
+          "2018-02-26 00:00:00"
+        ],
+        [
+          "\"003cc6161d7a2593f2525cce0c330d32\"",
+          "\"7d9802889236ab8fc541bfb438978cd7\"",
+          "delivered",
+          "2018-08-03 19:33:35",
+          "2018-08-03 20:04:14",
+          "2018-08-06 15:02:00",
+          "2018-08-07 11:32:11",
+          "2018-08-08 00:00:00"
+        ],
+        [
+          "\"003d804eef0e1b856881cd18e0cc0d4c\"",
+          "\"1c1bfb2cd4aa789067295941c42120ff\"",
+          "delivered",
+          "2017-11-17 19:43:10",
+          "2017-11-18 12:15:18",
+          "2017-11-21 22:38:54",
+          "2018-01-10 23:19:43",
+          "2017-12-18 00:00:00"
+        ],
+        [
+          "\"003f201cdd39cdd59b6447cff2195456\"",
+          "e41d728aab3d0dff5fb070f93eb61345",
+          "delivered",
+          "2018-02-21 16:59:24",
+          "2018-02-21 17:10:41",
+          "2018-02-23 00:07:44",
+          "2018-03-28 18:54:53",
+          "2018-03-22 00:00:00"
+        ]
+      ],
+      "total_rows": 99442
+    },
+    "order_items": {
+      "columns": [
+        "order_id",
+        "order_item_id",
+        "product_id",
+        "seller_id",
+        "shipping_limit_date",
+        "price",
+        "freight_value"
+      ],
+      "rows": [
+        [
+          "\"00010242fe8c5a6d1ba2dd792cb16214\"",
+          1,
+          "\"4244733e06e7ecb4970a6e2683c13e61\"",
+          "\"48436dade18ac8b2bce089ec2a041202\"",
+          "2017-09-19 09:45:35",
+          58.9,
+          13.29
+        ],
+        [
+          "\"00042b26cf59d7ce69dfabb4e55b4fd9\"",
+          1,
+          "ac6c3623068f30de03045865e4e10089",
+          "df560393f3a51e74553ab94004ba5c87",
+          "2017-02-13 13:57:51",
+          199.9,
+          18.14
+        ],
+        [
+          "\"00048cc3ae777c65dbb7d2a0634bc1ea\"",
+          1,
+          "ef92defde845ab8450f9d70c526ef70f",
+          "\"6426d21aca402a131fc0a5d0960a3c90\"",
+          "2017-05-23 03:55:27",
+          21.9,
+          12.69
+        ],
+        [
+          "\"000aed2e25dbad2f9ddb70584c5a2ded\"",
+          1,
+          "\"4fa33915031a8cde03dd0d3e8fb27f01\"",
+          "fe2032dab1a61af8794248c8196565c9",
+          "2018-05-16 20:57:03",
+          144.0,
+          8.77
+        ],
+        [
+          "\"000e906b789b55f64edcb1f84030f90d\"",
+          1,
+          "\"57d79905de06d8897872c551bfd09358\"",
+          "ea8482cd71df3c1969d7b9473ff13abc",
+          "2017-11-27 19:09:02",
+          21.99,
+          11.85
+        ],
+        [
+          "\"0011d82c4b53e22e84023405fb467e57\"",
+          1,
+          "c389f712c4b4510bc997cee93e8b1a28",
+          "bfd27a966d91cfaafdb25d076585f0da",
+          "2018-01-29 21:51:25",
+          289.0,
+          26.33
+        ],
+        [
+          "\"0015ebb40fb17286bea51d4607c4733c\"",
+          1,
+          "\"50fd2b788dc166edd20512370dac54df\"",
+          "\"8b321bb669392f5163d04c59e235e066\"",
+          "2018-01-18 09:11:24",
+          21.9,
+          15.1
+        ],
+        [
+          "\"0016dfedd97fc2950e388d2971d718c7\"",
+          1,
+          "\"4089861a1bd4685da70bddd6b4f974f1\"",
+          "a35124e2d763d7ca3fbe3b97d143200f",
+          "2017-05-05 10:05:12",
+          49.75,
+          20.8
+        ],
+        [
+          "\"0017afd5076e074a48f1f1a4c7bac9c5\"",
+          1,
+          "fe59a1e006df3ac42bf0ceb876d70969",
+          "\"25c5c91f63607446a97b143d2d535d31\"",
+          "2017-04-24 22:25:19",
+          809.1,
+          44.29
+        ],
+        [
+          "\"001e7ba991be1b19605ca0316e7130f9\"",
+          1,
+          "\"884fa3cd42986ba480ea2f8ae4e25ff7\"",
+          "\"3340ef1913fb70d28420f6ceb685c339\"",
+          "2017-03-23 11:47:37",
+          195.0,
+          18.21
+        ],
+        [
+          "\"001e7cf2ad6bef3ade12ebc56ceaf0f3\"",
+          1,
+          "bdcf6a834e8faa30dac3886c7a58e92e",
+          "\"2a84855fd20af891be03bc5924d2b453\"",
+          "2018-05-22 10:59:50",
+          35.9,
+          15.2
+        ],
+        [
+          "\"00254baeb6c932b0a8aeead91fbd02b5\"",
+          1,
+          "\"18901878788fec7ddc55e64d1ace8187\"",
+          "e8b4225284fbb02d16f200513f1f395d",
+          "2018-05-14 22:14:46",
+          149.9,
+          43.11
+        ],
+        [
+          "\"00276d5c3491fbf55305e26891040df9\"",
+          1,
+          "\"71c89e9d8fa274b017279aa322cd0e19\"",
+          "\"8f78f0903005064036736c7173a5c2ed\"",
+          "2018-02-27 11:55:57",
+          44.9,
+          23.22
+        ],
+        [
+          "\"002955b0acc63d04f6724a31967e82bd\"",
+          1,
+          "d9bdf643d95cb89844c0da1a0df1d16e",
+          "\"058fd0aa2bfdb2274e05e1ae971dabb6\"",
+          "2017-12-22 15:51:31",
+          120.0,
+          15.59
+        ],
+        [
+          "\"002b430ff89b3a24c31a1170acbbedea\"",
+          1,
+          "cc47c0863559499f01b4cad750929d10",
+          "\"7a67c85e85bb2ce8582c35f2203ad736\"",
+          "2017-06-26 22:10:14",
+          199.99,
+          65.56
+        ],
+        [
+          "\"002b4e6fa42cd4a22cc86abc18fe9c05\"",
+          1,
+          "a6f449f6257f26e556013151cee46b4b",
+          "b1a81260566c1bac3114a6d124413f27",
+          "2018-03-15 10:35:37",
+          99.9,
+          19.67
+        ],
+        [
+          "\"00378c6c981f234634c0b9d6128df6dd\"",
+          1,
+          "\"38fa750a3a3b3204f169c86a3284d387\"",
+          "\"218d46b86c1881d022bce9c68a7d4b15\"",
+          "2018-02-08 19:50:27",
+          41.0,
+          11.85
+        ],
+        [
+          "\"003cc6161d7a2593f2525cce0c330d32\"",
+          1,
+          "fadc89c2a60ff96b18827644074dfd70",
+          "\"53e4c6e0f4312d4d2107a8c9cddf45cd\"",
+          "2018-08-07 20:04:14",
+          85.0,
+          12.9
+        ],
+        [
+          "\"003d804eef0e1b856881cd18e0cc0d4c\"",
+          1,
+          "\"41402af2a88247152583bb812ba235dd\"",
+          "\"4869f7a5dfa277a7dca6462dcf3b52b2\"",
+          "2017-11-27 12:15:18",
+          277.0,
+          35.74
+        ],
+        [
+          "\"003f201cdd39cdd59b6447cff2195456\"",
+          1,
+          "\"656e0eca68dcecf6a31b8ececfabe3e8\"",
+          "\"0b90b6df587eb83608a64ea8b390cf07\"",
+          "2018-03-05 17:10:41",
+          85.0,
+          17.03
+        ]
+      ],
+      "total_rows": 112651
+    },
+    "products": {
+      "columns": [
+        "product_id",
+        "product_category_name",
+        "product_name_lenght",
+        "product_description_lenght",
+        "product_photos_qty",
+        "product_weight_g",
+        "product_length_cm",
+        "product_height_cm",
+        "product_width_cm"
+      ],
+      "rows": [
+        [
+          "\"00088930e925c41fd95ebfe695fd2655\"",
+          "automotivo",
+          56,
+          752,
+          4,
+          1225,
+          55,
+          10,
+          26
+        ],
+        [
+          "\"001b72dfd63e9833e8c02742adf472e3\"",
+          "moveis_decoracao",
+          45,
+          520,
+          3,
+          600,
+          26,
+          8,
+          22
+        ],
+        [
+          "\"002552c0663708129c0019cc97552d7d\"",
+          "cool_stuff",
+          18,
+          263,
+          1,
+          355,
+          22,
+          16,
+          12
+        ],
+        [
+          "\"002af88741ba70c7b5cf4e4a0ad7ef85\"",
+          "cool_stuff",
+          44,
+          629,
+          3,
+          600,
+          40,
+          30,
+          40
+        ],
+        [
+          "\"0030e635639c898b323826589761cf23\"",
+          "ferramentas_jardim",
+          40,
+          437,
+          1,
+          1550,
+          26,
+          6,
+          20
+        ],
+        [
+          "\"003128f981470c3e5a2e7445e4a771cd\"",
+          "esporte_lazer",
+          59,
+          1100,
+          6,
+          1550,
+          16,
+          10,
+          16
+        ],
+        [
+          "\"003962cb74a8b43cf1034fed541a76f0\"",
+          "malas_acessorios",
+          55,
+          214,
+          1,
+          1000,
+          16,
+          46,
+          36
+        ],
+        [
+          "\"004154251837f6ac124ad4374b3a8148\"",
+          "moveis_decoracao",
+          51,
+          1470,
+          3,
+          150,
+          35,
+          2,
+          25
+        ],
+        [
+          "\"0042f1a9a7e0edd1400c6cd0fda065f8\"",
+          "beleza_saude",
+          60,
+          1883,
+          3,
+          175,
+          23,
+          11,
+          13
+        ],
+        [
+          "\"0043c62d00db47eff6a6bc4cf6bfaeda\"",
+          "esporte_lazer",
+          36,
+          1105,
+          1,
+          380,
+          18,
+          12,
+          14
+        ],
+        [
+          "\"004ffcbfa5aac82212a95bc972ea8a85\"",
+          "moveis_quarto",
+          44,
+          776,
+          2,
+          10000,
+          65,
+          35,
+          35
+        ],
+        [
+          "\"00636f9286f69c9f1bdabe76e670fb50\"",
+          "moveis_decoracao",
+          60,
+          382,
+          1,
+          500,
+          25,
+          2,
+          17
+        ],
+        [
+          "\"006508eabcc19ae52ed87323124ad0e9\"",
+          "construcao_ferramentas_seguranca",
+          50,
+          984,
+          2,
+          246,
+          22,
+          15,
+          19
+        ],
+        [
+          "\"006baa9a5b8f95895f15273a35bc2664\"",
+          "esporte_lazer",
+          33,
+          223,
+          2,
+          950,
+          60,
+          15,
+          15
+        ],
+        [
+          "\"006c67546bfe73c33b83f6bd1ad58c36\"",
+          "automotivo",
+          59,
+          703,
+          6,
+          4550,
+          47,
+          19,
+          23
+        ],
+        [
+          "\"0075c14603d80515e20908c156ceb47b\"",
+          "esporte_lazer",
+          50,
+          329,
+          2,
+          150,
+          16,
+          18,
+          16
+        ],
+        [
+          "\"007c63ae4b346920756b5adcad8095de\"",
+          "utilidades_domesticas",
+          48,
+          808,
+          1,
+          2800,
+          30,
+          30,
+          30
+        ],
+        [
+          "\"0085dddda27567189f1dfd1eda7c286e\"",
+          "cama_mesa_banho",
+          58,
+          593,
+          1,
+          1800,
+          40,
+          8,
+          30
+        ],
+        [
+          "\"0091d85023824de2d33252310c952307\"",
+          "utilidades_domesticas",
+          39,
+          169,
+          4,
+          450,
+          16,
+          24,
+          11
+        ],
+        [
+          "\"0092a9e1c8a471753ed7ffa7eef5086e\"",
+          "beleza_saude",
+          48,
+          1411,
+          1,
+          350,
+          16,
+          16,
+          16
+        ]
+      ],
+      "total_rows": 32952
+    },
+    "sellers": {
+      "columns": [
+        "seller_id",
+        "seller_zip_code_prefix",
+        "seller_city",
+        "seller_state"
+      ],
+      "rows": [
+        [
+          "\"001cca7ae9ae17fb1caed9dfb1094831\"",
+          null,
+          "cariacica",
+          "ES"
+        ],
+        [
+          "\"00ee68308b45bc5e2660cd833c3f81cc\"",
+          null,
+          "sao paulo",
+          "SP"
+        ],
+        [
+          "\"00fc707aaaad2d31347cf883cd2dfe10\"",
+          null,
+          "maringa",
+          "PR"
+        ],
+        [
+          "\"013900e863eace745d3ec7614cab5b1a\"",
+          null,
+          "curitiba",
+          "PR"
+        ],
+        [
+          "\"0176f73cc1195f367f7b32db1e5b3aa8\"",
+          null,
+          "ibitinga",
+          "SP"
+        ],
+        [
+          "\"01ed254b9ff8407dfb9d99ba1e17d923\"",
+          null,
+          "mogi das cruzes",
+          "SP"
+        ],
+        [
+          "\"0249d282d911d23cb8b869ab49c99f53\"",
+          null,
+          "sao paulo",
+          "SP"
+        ],
+        [
+          "\"02b72cdeb9cfcc429f1af6f4e3f3b737\"",
+          null,
+          "ibitinga",
+          "SP"
+        ],
+        [
+          "\"02d35243ea2e497335cd0f076b45675d\"",
+          null,
+          "natal",
+          "RN"
+        ],
+        [
+          "\"02f5837340d7eb4f653d676c7256523a\"",
+          null,
+          "curitiba",
+          "PR"
+        ],
+        [
+          "\"02f623a8eb246f3c5f7c2f96462654e6\"",
+          null,
+          "botucatu",
+          "SP"
+        ],
+        [
+          "\"0307f7565ff85b299b6e5ef162b1b1a9\"",
+          null,
+          "sao jose do rio preto",
+          "SP"
+        ],
+        [
+          "\"038b75b729c8a9a04b0d07cba7eabe86\"",
+          null,
+          "sao jose dos campos",
+          "SP"
+        ],
+        [
+          "\"0417b067eeab773d2f7061a726dc477f\"",
+          null,
+          "sao bento do sul",
+          "SC"
+        ],
+        [
+          "\"042573af89b6d931f672efaf789d8358\"",
+          null,
+          "sorocaba",
+          "SP"
+        ],
+        [
+          "\"0509040ea3fe50071181bbc359eb7738\"",
+          null,
+          "belo horizonte",
+          "MG"
+        ],
+        [
+          "\"0570350b23eda5444f8d1d9544932058\"",
+          null,
+          "sao paulo",
+          "SP"
+        ],
+        [
+          "\"058fd0aa2bfdb2274e05e1ae971dabb6\"",
+          null,
+          "santo andre",
+          "SP"
+        ],
+        [
+          "\"05a940b4ecae36cadfd8e93bd9c43257\"",
+          null,
+          "goiania",
+          "GO"
+        ],
+        [
+          "\"05d2173d43ea568aa0540eba70d2ca76\"",
+          null,
+          "alfenas",
+          "MG"
+        ]
+      ],
+      "total_rows": 3095
+    },
+    "order_payments": {
+      "columns": [
+        "order_id",
+        "payment_sequential",
+        "payment_type",
+        "payment_installments",
+        "payment_value"
+      ],
+      "rows": [
+        [
+          "\"00010242fe8c5a6d1ba2dd792cb16214\"",
+          1,
+          "credit_card",
+          2,
+          72.19
+        ],
+        [
+          "\"00042b26cf59d7ce69dfabb4e55b4fd9\"",
+          1,
+          "credit_card",
+          3,
+          218.04
+        ],
+        [
+          "\"00048cc3ae777c65dbb7d2a0634bc1ea\"",
+          1,
+          "boleto",
+          1,
+          34.59
+        ],
+        [
+          "\"00063b381e2406b52ad429470734ebd5\"",
+          1,
+          "credit_card",
+          5,
+          57.98
+        ],
+        [
+          "\"0008288aa423d2a3f00fcb17cd7d8719\"",
+          1,
+          "boleto",
+          1,
+          126.54
+        ],
+        [
+          "\"000aed2e25dbad2f9ddb70584c5a2ded\"",
+          1,
+          "credit_card",
+          1,
+          152.77
+        ],
+        [
+          "\"000c3e6612759851cc3cbb4b83257986\"",
+          1,
+          "boleto",
+          1,
+          112.71
+        ],
+        [
+          "\"000e63d38ae8c00bbcb5a30573b99628\"",
+          1,
+          "credit_card",
+          1,
+          56.78
+        ],
+        [
+          "\"000e906b789b55f64edcb1f84030f90d\"",
+          1,
+          "credit_card",
+          3,
+          33.84
+        ],
+        [
+          "\"0011d82c4b53e22e84023405fb467e57\"",
+          1,
+          "credit_card",
+          2,
+          315.33
+        ],
+        [
+          "\"00137e170939bba5a3134e2386413108\"",
+          1,
+          "boleto",
+          1,
+          421.65
+        ],
+        [
+          "\"0015ebb40fb17286bea51d4607c4733c\"",
+          1,
+          "credit_card",
+          1,
+          37.0
+        ],
+        [
+          "\"0016dfedd97fc2950e388d2971d718c7\"",
+          1,
+          "credit_card",
+          5,
+          52.63
+        ],
+        [
+          "\"0016dfedd97fc2950e388d2971d718c7\"",
+          2,
+          "voucher",
+          1,
+          17.92
+        ],
+        [
+          "\"0017afd5076e074a48f1f1a4c7bac9c5\"",
+          1,
+          "credit_card",
+          10,
+          853.39
+        ],
+        [
+          "\"001ac194d4a326a6fa99b581e9a3d963\"",
+          1,
+          "boleto",
+          1,
+          62.54
+        ],
+        [
+          "\"001b76dd48a5b1eee3e87778daa40df8\"",
+          1,
+          "credit_card",
+          3,
+          95.0
+        ],
+        [
+          "\"001d8f0e34a38c37f7dba2a37d4eba8b\"",
+          1,
+          "credit_card",
+          2,
+          53.54
+        ],
+        [
+          "\"001daeb0eddc45b999bad0801ad9d273\"",
+          1,
+          "boleto",
+          1,
+          55.12
+        ],
+        [
+          "\"001e7ba991be1b19605ca0316e7130f9\"",
+          1,
+          "credit_card",
+          10,
+          213.21
+        ]
+      ],
+      "total_rows": 103887
+    },
+    "order_reviews": {
+      "columns": [
+        "review_id",
+        "order_id",
+        "review_score",
+        "review_comment_title",
+        "review_comment_message",
+        "review_creation_date",
+        "review_answer_timestamp"
+      ],
+      "rows": [
+        [
+          "\"0001239bc1de2e33cb583967c2ca4c67\"",
+          "\"fc046d7776171871436844218f817d7d\"",
+          5,
+          "",
+          "",
+          "2018-03-20 00:00:00",
+          "2018-03-20 18:36:04"
+        ],
+        [
+          "\"00032b0141443497c898b3093690af51\"",
+          "\"04fb47576993a3cb0c12d4b25eab6e4e\"",
+          5,
+          "",
+          "",
+          "2017-05-30 00:00:00",
+          "2017-06-01 23:28:55"
+        ],
+        [
+          "\"00034d88989f9a4c393bdcaec301537f\"",
+          "\"5f358d797a49fe2f24352f73426215f6\"",
+          5,
+          "",
+          "",
+          "2017-08-12 00:00:00",
+          "2017-08-13 19:56:53"
+        ],
+        [
+          "\"000359bceee1b6fe876b30d35b5f9ef2\"",
+          "\"97868e4c884bc85f4501ae0a66181cc9\"",
+          5,
+          "",
+          "",
+          "2018-02-06 00:00:00",
+          "2018-02-06 20:54:37"
+        ],
+        [
+          "\"00055e36e9608fe969231e551983a69c\"",
+          "\"f5fea26ab547eec920e6f8ecdc5c37e4\"",
+          5,
+          "",
+          "O produto foi entregue muito antes do esperado. Ótima agilidade.",
+          "2017-11-25 00:00:00",
+          "2017-11-27 11:37:22"
+        ],
+        [
+          "\"0005bc906dfe3b73261020bf8e9b76cf\"",
+          "\"75cc0defdf90cda65066ce0ac171e2ab\"",
+          5,
+          "",
+          "Muito bom ",
+          "2017-10-15 01:00:00",
+          "2017-10-15 17:53:22"
+        ],
+        [
+          "\"0006cce9fd63c8ea1c488b88d4cb3f02\"",
+          "\"df940e48580d0f2c2283d0782c7f99e3\"",
+          5,
+          "",
+          "",
+          "2017-08-26 00:00:00",
+          "2017-08-30 12:03:31"
+        ],
+        [
+          "\"000b291d6b3cc20cbe11873a8ad2a3e3\"",
+          "\"8a321ac5f4ec102c87791bd745cb3fbf\"",
+          5,
+          "",
+          "",
+          "2018-01-18 00:00:00",
+          "2018-01-19 01:51:32"
+        ],
+        [
+          "\"000b3f23cb5d4e7dd8536fb2fe749164\"",
+          "\"b979990724c0c6accce90ed2a7bb04e0\"",
+          5,
+          "",
+          "",
+          "2018-06-13 00:00:00",
+          "2018-06-14 00:24:36"
+        ],
+        [
+          "\"000da26f546e5d51b6336486f57fc632\"",
+          "\"dc6a29077e547f5fe4377f251fd1c5d0\"",
+          5,
+          "",
+          "\"Muito satisfeita com o produto, entrega e a praticidade do site. \"",
+          "2017-06-03 00:00:00",
+          "2017-06-07 04:00:21"
+        ],
+        [
+          "\"000faedabef50689a0ea3fc4fbf99cb4\"",
+          "\"4b6a69ab5ba578e5193deeffcf9d0f7a\"",
+          4,
+          "",
+          "",
+          "2017-05-30 00:00:00",
+          "2017-05-30 23:08:24"
+        ],
+        [
+          "\"0016d2d10b5c26607549a29446578edf\"",
+          "\"7536412c065c3c88cab8d15d406b24d8\"",
+          4,
+          "",
+          "",
+          "2018-03-13 00:00:00",
+          "2018-03-13 20:34:04"
+        ],
+        [
+          "\"001736c33bb2a7a2454785a497d9a7ab\"",
+          "\"df75a2d753c65af66e3571e2dbfd985a\"",
+          3,
+          "",
+          "A entrega foi rapida porem o material do produto nao me agradou. ",
+          "2018-06-15 00:00:00",
+          "2018-06-15 19:20:57"
+        ],
+        [
+          "\"001a0f6aa15b5525ac30fbe74a2eddd0\"",
+          "\"346ffefd56ff0691db147f471af8a1dc\"",
+          5,
+          "",
+          "Chegou bem antes do prazo e o material de muito boa qualidade!",
+          "2017-09-27 00:00:00",
+          "2017-09-27 23:54:04"
+        ],
+        [
+          "\"001b3b4666d0e109d7563e1465f4ba60\"",
+          "\"9d6f552c9b731d52bb9c9b6051ddf5a2\"",
+          4,
+          "",
+          "",
+          "2017-02-14 00:00:00",
+          "2017-02-15 14:28:07"
+        ],
+        [
+          "\"002268961f544593083579b57bca4f59\"",
+          "\"c90e15a8d750212aa19ac74b22a39493\"",
+          1,
+          "",
+          "",
+          "2018-05-01 00:00:00",
+          "2018-05-01 21:25:23"
+        ],
+        [
+          "\"0027436e8fd61af9c71906b1fc7c0f59\"",
+          "\"1656551f139b288763e626d0191fb3e4\"",
+          5,
+          "",
+          "",
+          "2017-04-20 00:00:00",
+          "2017-04-26 10:44:16"
+        ],
+        [
+          "\"002acdbbcbc1e3d95d3fd970993df7d2\"",
+          "\"9dc716765847e0436278efdb22248d1a\"",
+          2,
+          "",
+          "",
+          "2018-04-21 00:00:00",
+          "2018-04-21 17:05:31"
+        ],
+        [
+          "\"002d89a798b17f7c2887bd11785b09ec\"",
+          "\"0446aaa642b81cd046c44edda61ed010\"",
+          4,
+          "",
+          "",
+          "2017-11-09 00:00:00",
+          "2017-11-10 20:22:03"
+        ],
+        [
+          "\"002dcef64fe5cdfa45ebdb04a4f682e0\"",
+          "\"1ebcf69fa275bb588691ece37ef82a30\"",
+          5,
+          "",
+          "",
+          "2017-11-09 00:00:00",
+          "2017-11-09 14:45:42"
+        ]
+      ],
+      "total_rows": 99046
+    },
+    "geolocation": {
+      "columns": [
+        "geolocation_zip_code_prefix",
+        "geolocation_lat",
+        "geolocation_lng",
+        "geolocation_city",
+        "geolocation_state"
+      ],
+      "rows": [
+        [
+          null,
+          -28.07010363149126,
+          -52.01865772856674,
+          "tapejara",
+          "RS"
+        ],
+        [
+          null,
+          -28.388931876600495,
+          -51.84687132274168,
+          "david canabarro",
+          "RS"
+        ],
+        [
+          null,
+          -28.07185541645192,
+          -52.01471586864233,
+          "tapejara",
+          "RS"
+        ],
+        [
+          null,
+          -27.877125117712357,
+          -52.22488216264145,
+          "getulio vargas",
+          "RS"
+        ],
+        [
+          null,
+          -28.06863887662893,
+          -52.01070524698279,
+          "tapejara",
+          "RS"
+        ],
+        [
+          null,
+          -28.068863628939333,
+          -52.01296438020919,
+          "tapejara",
+          "RS"
+        ],
+        [
+          null,
+          -28.072187652217004,
+          -52.01127167058397,
+          "tapejara",
+          "RS"
+        ],
+        [
+          null,
+          -28.180655165648112,
+          -52.034366727397455,
+          "agua santa",
+          "RS"
+        ],
+        [
+          null,
+          -28.070492625454214,
+          -52.01134199389962,
+          "tapejara",
+          "RS"
+        ],
+        [
+          null,
+          -28.343272557292238,
+          -51.873733830619265,
+          "ciriaco",
+          "RS"
+        ],
+        [
+          null,
+          -27.883377211210544,
+          -52.2218555617316,
+          "getulio vargas",
+          "RS"
+        ],
+        [
+          null,
+          -27.913772294475212,
+          -52.25684286050401,
+          "estacao",
+          "RS"
+        ],
+        [
+          null,
+          -28.069025135378347,
+          -52.011169949568554,
+          "tapejara",
+          "RS"
+        ],
+        [
+          null,
+          -27.882554890720368,
+          -52.22287923657917,
+          "getulio vargas",
+          "RS"
+        ],
+        [
+          null,
+          -27.935265251284157,
+          -52.42723209270409,
+          "ipiranga do sul",
+          "RS"
+        ],
+        [
+          null,
+          -27.88097286626901,
+          -52.22320625544614,
+          "getúlio vargas",
+          "RS"
+        ],
+        [
+          null,
+          -28.07343831270623,
+          -52.01666438696413,
+          "tapejara",
+          "RS"
+        ],
+        [
+          null,
+          -28.05696071002902,
+          -51.85716023441122,
+          "ibiaca",
+          "RS"
+        ],
+        [
+          null,
+          -28.073965791478617,
+          -52.010191089195736,
+          "tapejara",
+          "RS"
+        ],
+        [
+          null,
+          -27.913659003345128,
+          -52.24861460509175,
+          "estação",
+          "RS"
+        ]
+      ],
+      "total_rows": 1000163
+    },
+    "product_category_name_translation": {
+      "columns": [
+        "product_category_name",
+        "product_category_name_english"
+      ],
+      "rows": [
+        [
+          "agro_industria_e_comercio",
+          "agro_industry_and_commerce"
+        ],
+        [
+          "alimentos",
+          "food"
+        ],
+        [
+          "alimentos_bebidas",
+          "food_drink"
+        ],
+        [
+          "artes",
+          "art"
+        ],
+        [
+          "artes_e_artesanato",
+          "arts_and_craftmanship"
+        ],
+        [
+          "artigos_de_festas",
+          "party_supplies"
+        ],
+        [
+          "artigos_de_natal",
+          "christmas_supplies"
+        ],
+        [
+          "audio",
+          "audio"
+        ],
+        [
+          "automotivo",
+          "auto"
+        ],
+        [
+          "bebes",
+          "baby"
+        ],
+        [
+          "bebidas",
+          "drinks"
+        ],
+        [
+          "beleza_saude",
+          "health_beauty"
+        ],
+        [
+          "brinquedos",
+          "toys"
+        ],
+        [
+          "cama_mesa_banho",
+          "bed_bath_table"
+        ],
+        [
+          "casa_conforto",
+          "home_confort"
+        ],
+        [
+          "casa_conforto_2",
+          "home_comfort_2"
+        ],
+        [
+          "casa_construcao",
+          "home_construction"
+        ],
+        [
+          "cds_dvds_musicais",
+          "cds_dvds_musicals"
+        ],
+        [
+          "cine_foto",
+          "cine_photo"
+        ],
+        [
+          "climatizacao",
+          "air_conditioning"
+        ]
+      ],
+      "total_rows": 72
+    }
+  },
+  "amazon": {
+    "categories": {
+      "columns": [
+        "id",
+        "category_name"
+      ],
+      "rows": [
+        [
+          null,
+          "category_name"
+        ],
+        [
+          1,
+          "Beading & Jewelry Making"
+        ],
+        [
+          2,
+          "Fabric Decorating"
+        ],
+        [
+          3,
+          "Knitting & Crochet Supplies"
+        ],
+        [
+          4,
+          "Printmaking Supplies"
+        ],
+        [
+          5,
+          "Scrapbooking & Stamping Supplies"
+        ],
+        [
+          6,
+          "Sewing Products"
+        ],
+        [
+          7,
+          "Craft & Hobby Fabric"
+        ],
+        [
+          8,
+          "Needlework Supplies"
+        ],
+        [
+          9,
+          "\"Arts, Crafts & Sewing Storage\""
+        ],
+        [
+          10,
+          "\"Painting, Drawing & Art Supplies\""
+        ],
+        [
+          11,
+          "Craft Supplies & Materials"
+        ],
+        [
+          12,
+          "Gift Wrapping Supplies"
+        ],
+        [
+          13,
+          "Party Decorations"
+        ],
+        [
+          14,
+          "Automotive Paint & Paint Supplies"
+        ],
+        [
+          15,
+          "Heavy Duty & Commercial Vehicle Equipment"
+        ],
+        [
+          16,
+          "Automotive Tires & Wheels"
+        ],
+        [
+          17,
+          "Automotive Tools & Equipment"
+        ],
+        [
+          18,
+          "Automotive Performance Parts & Accessories"
+        ],
+        [
+          19,
+          "Car Care"
+        ]
+      ],
+      "total_rows": 249
+    },
+    "products": {
+      "columns": [
+        "asin",
+        "title",
+        "imgUrl",
+        "productURL",
+        "stars",
+        "reviews",
+        "price",
+        "listPrice",
+        "category_id",
+        "isBestSeller",
+        "boughtInLastMonth"
+      ],
+      "rows": [
+        [
+          "0060501960",
+          "Presidents' Day",
+          "https://m.media-amazon.com/images/I/51W5fI3Ll8L._AC_UY218_.jpg",
+          "https://www.amazon.com/dp/0060501960",
+          4.7,
+          0,
+          7.69,
+          8.99,
+          263,
+          "False",
+          0
+        ],
+        [
+          "0062665782",
+          "A Thousand Heartbeats",
+          "https://m.media-amazon.com/images/I/810+cZtaiDL._AC_UL320_.jpg",
+          "https://www.amazon.com/dp/0062665782",
+          4.4,
+          0,
+          14.63,
+          19.99,
+          74,
+          "False",
+          0
+        ],
+        [
+          "0099557037",
+          "Mist over Pendle",
+          "https://m.media-amazon.com/images/I/81D4h3K29oL._AC_UL320_.jpg",
+          "https://www.amazon.com/dp/0099557037",
+          4.5,
+          0,
+          19.55,
+          0.0,
+          74,
+          "False",
+          0
+        ],
+        [
+          "013369173X",
+          "Realidades 2",
+          "https://m.media-amazon.com/images/I/91Mn3HdgWdL._AC_UL320_.jpg",
+          "https://www.amazon.com/dp/013369173X",
+          4.6,
+          0,
+          95.0,
+          100.0,
+          74,
+          "False",
+          0
+        ],
+        [
+          "0140543635",
+          "Un Dia de Nieve (Spanish Edition)",
+          "https://m.media-amazon.com/images/I/A1bdcnxuUjL._AC_UL320_.jpg",
+          "https://www.amazon.com/dp/0140543635",
+          4.9,
+          0,
+          7.29,
+          7.99,
+          82,
+          "False",
+          0
+        ],
+        [
+          "0307743691",
+          "Girls in White Dresses",
+          "https://m.media-amazon.com/images/I/81h0iLMqPVL._MCnd_AC_UL320_.jpg",
+          "https://www.amazon.com/dp/0307743691",
+          3.6,
+          1751,
+          16.95,
+          0.0,
+          91,
+          "False",
+          0
+        ],
+        [
+          "0316592706",
+          "\"The Stolen Heir: A Novel of Elfhame (The Stolen Heir, 1)\"",
+          "https://m.media-amazon.com/images/I/81xSl05tjtL._AC_UY218_.jpg",
+          "https://www.amazon.com/dp/0316592706",
+          4.5,
+          3229,
+          14.25,
+          20.99,
+          255,
+          "False",
+          0
+        ],
+        [
+          "0343461099",
+          "The Winds Of Heaven",
+          "https://m.media-amazon.com/images/I/51vnhujNryL._AC_UL320_.jpg",
+          "https://www.amazon.com/dp/0343461099",
+          4.4,
+          0,
+          28.95,
+          0.0,
+          74,
+          "False",
+          0
+        ],
+        [
+          "0399162720",
+          "Wreck This Journal (Red) Expanded Edition",
+          "https://m.media-amazon.com/images/I/91QV37wIiSL._AC_UY218_.jpg",
+          "https://www.amazon.com/dp/0399162720",
+          4.7,
+          2673,
+          8.61,
+          15.0,
+          255,
+          "False",
+          0
+        ],
+        [
+          "0451532139",
+          "The Classic Slave Narratives",
+          "https://m.media-amazon.com/images/I/81yPZKEi-cL._AC_UL320_.jpg",
+          "https://www.amazon.com/dp/0451532139",
+          4.7,
+          0,
+          7.95,
+          0.0,
+          46,
+          "False",
+          0
+        ],
+        [
+          "0465019765",
+          "The End Of Physics: The Myth Of A Unified Theory",
+          "https://m.media-amazon.com/images/I/713GzE4g8UL._AC_UL320_.jpg",
+          "https://www.amazon.com/dp/0465019765",
+          4.0,
+          0,
+          17.87,
+          21.99,
+          74,
+          "False",
+          0
+        ],
+        [
+          "048623245X",
+          "\"Blackwork Embroidery (Dover Embroidery, Needlepoint)\"",
+          "https://m.media-amazon.com/images/I/71-wpACb7EL._AC_UL320_.jpg",
+          "https://www.amazon.com/dp/048623245X",
+          4.2,
+          0,
+          11.95,
+          0.0,
+          8,
+          "False",
+          0
+        ],
+        [
+          "0534362745",
+          "Organic Chemistry (with InfoTrac and CD-ROM)",
+          "https://m.media-amazon.com/images/I/41FkO2cRfjL._AC_UL320_.jpg",
+          "https://www.amazon.com/dp/0534362745",
+          4.1,
+          0,
+          103.93,
+          152.95,
+          74,
+          "False",
+          0
+        ],
+        [
+          "0545214912",
+          "Something Upstairs",
+          "https://m.media-amazon.com/images/I/61zUh23hS1L._AC_UY218_.jpg",
+          "https://www.amazon.com/dp/0545214912",
+          4.7,
+          0,
+          9.99,
+          0.0,
+          263,
+          "False",
+          0
+        ],
+        [
+          "0545703190",
+          "Mini POM-POM Pets",
+          "https://m.media-amazon.com/images/I/81h3FhL4NuL._AC_UL320_.jpg",
+          "https://www.amazon.com/dp/0545703190",
+          4.5,
+          0,
+          19.38,
+          0.0,
+          5,
+          "False",
+          200
+        ],
+        [
+          "0678462046",
+          "\"Elsie Silver Chestnut Springs Series 3 Books Collection Set (Heartless, Flawless, Powerless)\"",
+          "https://m.media-amazon.com/images/I/81QpAUZIfyL._AC_UY218_.jpg",
+          "https://www.amazon.com/dp/0678462046",
+          4.8,
+          0,
+          45.99,
+          0.0,
+          250,
+          "False",
+          0
+        ],
+        [
+          "073535197X",
+          "Ocean Life Search & Find Puzzle",
+          "https://m.media-amazon.com/images/I/81KZvJf5-TL._AC_UL320_.jpg",
+          "https://www.amazon.com/dp/073535197X",
+          4.8,
+          0,
+          13.6,
+          16.99,
+          227,
+          "False",
+          100
+        ],
+        [
+          "0735353522",
+          "\"Galison Frank Lloyd Wright Saguaro Forms and Cactus Flowers Gold Foil Puzzle, 1,000 Pieces, 20”x27” – Fun, Relaxing and Challenging – Gold Foil Added to Image Brings New Flavor to Iconic Piece of Art\"",
+          "https://m.media-amazon.com/images/I/81-U0IAkImL._AC_UL320_.jpg",
+          "https://www.amazon.com/dp/0735353522",
+          4.7,
+          0,
+          18.04,
+          19.99,
+          227,
+          "False",
+          100
+        ],
+        [
+          "0735353824",
+          "\"Mudpuppy Little Feminist 500 Piece Jigsaw Puzzle for Kids and Adults, Feminist Puzzle Celebrates Women Who Have Made an Impact with Colorful Illustrated Portraits, Great Gift for Feminists\"",
+          "https://m.media-amazon.com/images/I/81mL4oirKjL._AC_UL320_.jpg",
+          "https://www.amazon.com/dp/0735353824",
+          4.8,
+          0,
+          15.3,
+          0.0,
+          227,
+          "False",
+          0
+        ],
+        [
+          "0735355665",
+          "Mudpuppy Magnet Puz Magicial Unicorn",
+          "https://m.media-amazon.com/images/I/8160gt6Xg5L._AC_UL320_.jpg",
+          "https://www.amazon.com/dp/0735355665",
+          4.7,
+          0,
+          12.99,
+          0.0,
+          270,
+          "False",
+          100
+        ]
+      ],
+      "total_rows": 1312118
+    },
+    "reviews": {
+      "columns": [
+        "id",
+        "product_id",
+        "user_id",
+        "profile_name",
+        "helpfulness_numerator",
+        "helpfulness_denominator",
+        "score",
+        "time",
+        "summary",
+        "text"
+      ],
+      "rows": [
+        [
+          9,
+          "B000E7L2R4",
+          "A1MZYO9TZK0BBI",
+          "R. James",
+          1,
+          1,
+          5,
+          1322006400,
+          "Yay Barley",
+          "Right now I'm mostly just sprouting this so my cats can eat the grass. They love it. I rotate it around with Wheatgrass and Rye too"
+        ],
+        [
+          10,
+          "B00171APVA",
+          "A21BT40VZCCYT4",
+          "Carol A. Reed",
+          0,
+          0,
+          5,
+          1351209600,
+          "Healthy Dog Food",
+          "This is a very healthy dog food. Good for their digestion. Also good for small puppies. My dog eats her required amount at every feeding."
+        ],
+        [
+          18,
+          "B001GVISJM",
+          "AFKW14U97Z6QO",
+          "Becca",
+          0,
+          0,
+          5,
+          1345075200,
+          "Love it!",
+          "I am very satisfied with my Twizzler purchase.  I shared these with others and we have all enjoyed them.  I will definitely be ordering more."
+        ],
+        [
+          24,
+          "B001GVISJM",
+          "AJ613OLZZUG7V",
+          "Mare's",
+          0,
+          0,
+          5,
+          1304467200,
+          "Twizzlers",
+          "I love this candy.  After weight watchers I had to cut back but still have a craving for it."
+        ],
+        [
+          29,
+          "B00144C10S",
+          "A2F4LZVGFLD1OB",
+          "DaisyH",
+          0,
+          0,
+          5,
+          1338854400,
+          "YUMMY!",
+          "\"I got this for my Mum who is not diabetic but needs to watch her sugar intake, and my father who simply chooses to limit unnecessary sugar intake - she's the one with the sweet tooth - they both LOVED these toffees, you would never guess that they're sugar-free and it's so great that you can eat them pretty much guilt free!  i was so impressed that i've ordered some for myself (w dark chocolate) to take to the office so i'll eat them instead of snacking on sugary sweets.<br />These are just EXCELLENT!\""
+        ],
+        [
+          41,
+          "B001EO5QW8",
+          "AQCY5KRO7489S",
+          "Garrett",
+          0,
+          0,
+          5,
+          1303430400,
+          "Why wouldn't you buy oatmeal from Mcanns? Tastes great!",
+          "\"The variety packs taste great!<br /><br />I have them every morning. At $0.30 cents per meal, I don't understand why everyone on earth isn't buying this stuff up.<br /><br />Maple and brown sugar is terrific, followed by apples and cinnamon, followed by regular. You don't get tired of the same ole thing, and they taste great.<br /><br />I just boil water from a small pot, empty the packet or 2 in a bowl, pour in boiling water, and watch it expand to 2x its size!<br /><br />Taste really good and takes minutes to prepare.<br /><br />Not sure why everyone on earth isn't this. Convenient, healthy, very quick, excellent quality, and extremely cheap...\""
+        ],
+        [
+          47,
+          "B001EO5QW8",
+          "AQLL2R1PPR46X",
+          "grumpyrainbow",
+          0,
+          0,
+          5,
+          1192752000,
+          "good",
+          "Good oatmeal.  I like the apple cinnamon the best.  Though I wouldn't follow the directions on the package since it always comes out too soupy for my taste.  That could just be me since I like my oatmeal really thick to add some milk on top of."
+        ],
+        [
+          56,
+          "B002GWHC0G",
+          "A2EFAW1P3DRXWO",
+          "TJ Fairfax",
+          0,
+          0,
+          5,
+          1349395200,
+          "Our guests love it!",
+          "\"We roast these in a large cast iron pan on the grill (about 1/3 of the bag at a time).  The smell is wonderful and the roasted beans taste delicious too.  More importantly, the coffee is smooth; no bitter aftertaste.  On numerous occasions, we've had to send the roasted beans home with friends because they like it so much.\""
+        ],
+        [
+          62,
+          "B004N5KULM",
+          "A7ZK2A3VIW7X9",
+          "Peggy",
+          0,
+          2,
+          5,
+          1319414400,
+          "pretty expensive",
+          "\"This bag of candy online is pretty expensive, it should be cheaper in order to compete with grocery stores, other than that, its a good combination of my favorite candy\""
+        ],
+        [
+          66,
+          "B005DUM9UQ",
+          "A3TWF9DQ6MU87E",
+          "dhy4b",
+          1,
+          1,
+          5,
+          1331510400,
+          "Great for preventing cramps",
+          "This stuff really works for preventing cramping during the middle to latter stages of your rides. Pop 1 into each water bottle and you're set. Flavor is fine and goes down easy."
+        ],
+        [
+          68,
+          "B005DUM9UQ",
+          "A8OFFIAL6XTOH",
+          "Bill Shirer",
+          0,
+          1,
+          2,
+          1338422400,
+          "Taste is not so good.",
+          "\"I purchased the Mango flavor, and to me it doesn't take like Mango at all.  There is no hint of sweetness, and unfortunately there is a hint or aftertaste almost like licorice.  I've been consuming various sports nutrition products for decades, so I'm familiar and have come to like the taste of the most of the products I've tried.  The mango flavor is one of the least appealing I've tasted.  It's not terrible, but it's bad enough that I notice the bad taste every sip I take.\""
+        ],
+        [
+          75,
+          "B001EPPI84",
+          "A3Q0IDQ03S0158",
+          "Jen",
+          0,
+          0,
+          2,
+          1287705600,
+          "nothing special",
+          "It is okay.  I would not go out of my way to buy it again"
+        ],
+        [
+          77,
+          "B004X2KR36",
+          "A2W3ABLWMJ84NS",
+          "Jessica Snyder",
+          0,
+          0,
+          5,
+          1348444800,
+          "Good",
+          "\"These looked like a perfect snack to through in with my trail mix.  Unfortunately, they arrived in a solid mass of melted chocolate.  I left them in my pantry for a few days, and when I opened them at room temperature they were still gooey.  I through them in the fridge and I've been breaking off hunks ever since.  They taste good to me, but the chocolate is all grainy after melting and then solidifying again.  I won't order them online again, but if I see them in a store I would pick them up.\""
+        ],
+        [
+          80,
+          "B005R8JE8O",
+          "A3H1EQD2PBC085",
+          "jmc",
+          0,
+          0,
+          5,
+          1344902400,
+          "this is the best",
+          "\"i know i cannot make tea this good.  granted, i am not from the south but i know i have never enjoyed tea that was this sweet without being too sweet.  it tastes crisp.\""
+        ],
+        [
+          97,
+          "B0019CW0HE",
+          "A18AAABCIJKC5Q",
+          "Rhiever",
+          0,
+          0,
+          5,
+          1303776000,
+          "Great dog food",
+          "\"My 1-1/2 year old basenji/jack russell mix loves this dog food. He's been noticeably healthier and more energetic since I switched him over from the standard dog foods earlier this year. Despite the higher cost of natural dog foods, I find that he eats significantly less of the Natural Balance dog foods and still stays happy and full. On the normal dog foods, he'd eat up to 3 cups of dog food a day (the recommended serving for his size), whereas he only eats about 1 cup to 1-1/2 cup of the Natural Balance dog food a day. When you take this into account, you're actually getting more \"\"bang for your buck\"\" with the natural dog foods since you don't have to buy as much to last just as long as the normal dog foods... and a healthier, happier dog, to boot! Add in the fact that you can get free, 2-day shipping with Amazon Prime... I'm sold!!\""
+        ],
+        [
+          103,
+          "B004K2IHUO",
+          "AVCA516CFZ9HF",
+          "S. Fowler",
+          0,
+          0,
+          4,
+          1335139200,
+          "TART!",
+          "\"The crust on these tarts are perfect.  My husband loves these, but I'm not so crazy about them.  They are just too sour/tart for my taste.  I'll eat the crust and hubby takes my filling.  My kids think they're great, so maybe it's just me.\""
+        ],
+        [
+          115,
+          "B0037LW78C",
+          "A1Q4PJXI5HS5WT",
+          "ceecee",
+          0,
+          0,
+          5,
+          1333065600,
+          "Tea review",
+          "\"I love, love this green tea.  It is very hard to find in our area and some places on the internet charge a big price and I usually don't get as many boxes as I did with this merchant.  I will definitely order from this seller again!! Thanks!!  I depend on my green tea fix everyday!\""
+        ],
+        [
+          121,
+          "B003SE19UK",
+          "A3A52DETIFZNZS",
+          "Sarah Wilson",
+          4,
+          4,
+          5,
+          1309564800,
+          "Great food.",
+          "\"I have done a lot of research to find the best food for my cat, and this is an excellent food.  That is also according to my holistic veterinarian.  They put probiotics on the kibble as the last step, which is very important to me.  The best thing is that my cat loved it immediately and I had to stop mixing it with the old food because she only would eat Holistic Select.\""
+        ],
+        [
+          129,
+          "B003OB0IB8",
+          "A3NVZTGPORNPRW",
+          "B. Pearce",
+          4,
+          4,
+          5,
+          1314489600,
+          "My favorite ramen",
+          "\"I've been eating Ramen noodles since I was a little kid, and I've never found a better flavor than Hot & Spicy Chicken!  It isn't hot at all to a chilihead like me, but it sure is good!\""
+        ],
+        [
+          135,
+          "B003OB0IB8",
+          "A1D0URD0AL237J",
+          "Mother of Pearl",
+          0,
+          0,
+          5,
+          1334620800,
+          "great flavor",
+          "i have bought allot of different flavors and this happens to be one of my favorites and will be getting more soon"
+        ]
+      ],
+      "total_rows": 409961
+    }
+  },
+  "instacart": {
+    "aisles": {
+      "columns": [
+        "aisle_id",
+        "aisle"
+      ],
+      "rows": [
+        [
+          null,
+          "aisle"
+        ],
+        [
+          1,
+          "prepared soups salads"
+        ],
+        [
+          2,
+          "specialty cheeses"
+        ],
+        [
+          3,
+          "energy granola bars"
+        ],
+        [
+          4,
+          "instant foods"
+        ],
+        [
+          5,
+          "marinades meat preparation"
+        ],
+        [
+          6,
+          "other"
+        ],
+        [
+          7,
+          "packaged meat"
+        ],
+        [
+          8,
+          "bakery desserts"
+        ],
+        [
+          9,
+          "pasta sauce"
+        ],
+        [
+          10,
+          "kitchen supplies"
+        ],
+        [
+          11,
+          "cold flu allergy"
+        ],
+        [
+          12,
+          "fresh pasta"
+        ],
+        [
+          13,
+          "prepared meals"
+        ],
+        [
+          14,
+          "tofu meat alternatives"
+        ],
+        [
+          15,
+          "packaged seafood"
+        ],
+        [
+          16,
+          "fresh herbs"
+        ],
+        [
+          17,
+          "baking ingredients"
+        ],
+        [
+          18,
+          "bulk dried fruits vegetables"
+        ],
+        [
+          19,
+          "oils vinegars"
+        ]
+      ],
+      "total_rows": 135
+    },
+    "departments": {
+      "columns": [
+        "department_id",
+        "department"
+      ],
+      "rows": [
+        [
+          null,
+          "department"
+        ],
+        [
+          1,
+          "frozen"
+        ],
+        [
+          2,
+          "other"
+        ],
+        [
+          3,
+          "bakery"
+        ],
+        [
+          4,
+          "produce"
+        ],
+        [
+          5,
+          "alcohol"
+        ],
+        [
+          6,
+          "international"
+        ],
+        [
+          7,
+          "beverages"
+        ],
+        [
+          8,
+          "pets"
+        ],
+        [
+          9,
+          "dry goods pasta"
+        ],
+        [
+          10,
+          "bulk"
+        ],
+        [
+          11,
+          "personal care"
+        ],
+        [
+          12,
+          "meat seafood"
+        ],
+        [
+          13,
+          "pantry"
+        ],
+        [
+          14,
+          "breakfast"
+        ],
+        [
+          15,
+          "canned goods"
+        ],
+        [
+          16,
+          "dairy eggs"
+        ],
+        [
+          17,
+          "household"
+        ],
+        [
+          18,
+          "babies"
+        ],
+        [
+          19,
+          "snacks"
+        ]
+      ],
+      "total_rows": 22
+    },
+    "products": {
+      "columns": [
+        "product_id",
+        "product_name",
+        "aisle_id",
+        "department_id"
+      ],
+      "rows": [
+        [
+          2,
+          "All-Seasons Salt",
+          104,
+          13
+        ],
+        [
+          9,
+          "Light Strawberry Blueberry Yogurt",
+          120,
+          16
+        ],
+        [
+          10,
+          "Sparkling Orange Juice & Prickly Pear Beverage",
+          115,
+          7
+        ],
+        [
+          11,
+          "Peach Mango Juice",
+          31,
+          7
+        ],
+        [
+          12,
+          "Chocolate Fudge Layer Cake",
+          119,
+          1
+        ],
+        [
+          15,
+          "Overnight Diapers Size 6",
+          56,
+          18
+        ],
+        [
+          18,
+          "Pizza for One Suprema  Frozen Pizza",
+          79,
+          1
+        ],
+        [
+          21,
+          "Small & Medium Dental Dog Treats",
+          40,
+          8
+        ],
+        [
+          24,
+          "Tri-Vi-Sol® Vitamins A-C-and D Supplement Drops for Infants",
+          47,
+          11
+        ],
+        [
+          28,
+          "Wheat Chex Cereal",
+          121,
+          14
+        ],
+        [
+          29,
+          "Fresh Cut Golden Sweet No Salt Added Whole Kernel Corn",
+          81,
+          15
+        ],
+        [
+          31,
+          "White Pearl Onions",
+          123,
+          4
+        ],
+        [
+          32,
+          "Nacho Cheese White Bean Chips",
+          107,
+          19
+        ],
+        [
+          40,
+          "Beef Hot Links Beef Smoked Sausage With Chile Peppers",
+          106,
+          12
+        ],
+        [
+          41,
+          "Organic Sourdough Einkorn Crackers Rosemary",
+          78,
+          19
+        ],
+        [
+          47,
+          "Onion Flavor Organic Roasted Seaweed Snack",
+          66,
+          6
+        ],
+        [
+          53,
+          "Whole Leaf Pure Aloe With Lemon Juice",
+          98,
+          7
+        ],
+        [
+          54,
+          "24/7 Performance Cat Litter",
+          41,
+          8
+        ],
+        [
+          56,
+          "Healthy Pop Butter Popcorn",
+          23,
+          19
+        ],
+        [
+          58,
+          "Whole Wheat Tortillas",
+          128,
+          3
+        ]
+      ],
+      "total_rows": 49569
+    },
+    "orders": {
+      "columns": [
+        "order_id",
+        "user_id",
+        "eval_set",
+        "order_number",
+        "order_dow",
+        "order_hour_of_day",
+        "days_since_prior_order"
+      ],
+      "rows": [
+        [
+          9,
+          139016,
+          "prior",
+          14,
+          0,
+          19,
+          5.0
+        ],
+        [
+          10,
+          135442,
+          "prior",
+          4,
+          6,
+          8,
+          8.0
+        ],
+        [
+          12,
+          152610,
+          "prior",
+          22,
+          6,
+          8,
+          10.0
+        ],
+        [
+          15,
+          54901,
+          "prior",
+          51,
+          3,
+          11,
+          2.0
+        ],
+        [
+          18,
+          118860,
+          "prior",
+          3,
+          4,
+          20,
+          6.0
+        ],
+        [
+          24,
+          193635,
+          "prior",
+          19,
+          0,
+          14,
+          0.0
+        ],
+        [
+          29,
+          81606,
+          "prior",
+          14,
+          5,
+          12,
+          10.0
+        ],
+        [
+          32,
+          119216,
+          "prior",
+          4,
+          1,
+          19,
+          11.0
+        ],
+        [
+          41,
+          85264,
+          "prior",
+          20,
+          2,
+          11,
+          21.0
+        ],
+        [
+          47,
+          191597,
+          "prior",
+          6,
+          5,
+          0,
+          15.0
+        ],
+        [
+          56,
+          41591,
+          "prior",
+          8,
+          0,
+          12,
+          2.0
+        ],
+        [
+          62,
+          189943,
+          "prior",
+          4,
+          0,
+          11,
+          7.0
+        ],
+        [
+          66,
+          83434,
+          "prior",
+          15,
+          0,
+          15,
+          5.0
+        ],
+        [
+          68,
+          96594,
+          "prior",
+          3,
+          3,
+          10,
+          30.0
+        ],
+        [
+          75,
+          106387,
+          "prior",
+          1,
+          5,
+          19,
+          null
+        ],
+        [
+          77,
+          91667,
+          "prior",
+          19,
+          1,
+          11,
+          5.0
+        ],
+        [
+          80,
+          190599,
+          "prior",
+          16,
+          3,
+          13,
+          7.0
+        ],
+        [
+          97,
+          175918,
+          "prior",
+          13,
+          0,
+          13,
+          27.0
+        ],
+        [
+          103,
+          16694,
+          "prior",
+          4,
+          2,
+          9,
+          8.0
+        ],
+        [
+          115,
+          124725,
+          "prior",
+          13,
+          0,
+          9,
+          8.0
+        ]
+      ],
+      "total_rows": 3421084
+    },
+    "order_products_train": {
+      "columns": [
+        "order_id",
+        "product_id",
+        "add_to_cart_order",
+        "reordered"
+      ],
+      "rows": [
+        [
+          349,
+          5115,
+          9,
+          1
+        ],
+        [
+          349,
+          11361,
+          2,
+          1
+        ],
+        [
+          349,
+          11520,
+          10,
+          1
+        ],
+        [
+          349,
+          25715,
+          11,
+          0
+        ],
+        [
+          349,
+          27695,
+          3,
+          1
+        ],
+        [
+          349,
+          30830,
+          8,
+          0
+        ],
+        [
+          349,
+          33000,
+          1,
+          1
+        ],
+        [
+          349,
+          36968,
+          7,
+          0
+        ],
+        [
+          349,
+          38015,
+          6,
+          0
+        ],
+        [
+          349,
+          45633,
+          5,
+          0
+        ],
+        [
+          349,
+          47672,
+          4,
+          0
+        ],
+        [
+          393,
+          6184,
+          2,
+          1
+        ],
+        [
+          393,
+          12078,
+          1,
+          1
+        ],
+        [
+          393,
+          12341,
+          5,
+          0
+        ],
+        [
+          393,
+          13424,
+          7,
+          1
+        ],
+        [
+          393,
+          16797,
+          6,
+          1
+        ],
+        [
+          393,
+          19828,
+          4,
+          1
+        ],
+        [
+          393,
+          30591,
+          8,
+          1
+        ],
+        [
+          393,
+          32403,
+          3,
+          1
+        ],
+        [
+          1119,
+          6046,
+          1,
+          1
+        ]
+      ],
+      "total_rows": 1384618
+    },
+    "order_products_prior": {
+      "columns": [
+        "order_id",
+        "product_id",
+        "add_to_cart_order",
+        "reordered"
+      ],
+      "rows": [
+        [
+          10,
+          1529,
+          6,
+          0
+        ],
+        [
+          10,
+          3464,
+          14,
+          0
+        ],
+        [
+          10,
+          4605,
+          5,
+          1
+        ],
+        [
+          10,
+          4796,
+          2,
+          1
+        ],
+        [
+          10,
+          14992,
+          11,
+          0
+        ],
+        [
+          10,
+          21137,
+          7,
+          1
+        ],
+        [
+          10,
+          22122,
+          8,
+          1
+        ],
+        [
+          10,
+          24852,
+          1,
+          1
+        ],
+        [
+          10,
+          25720,
+          15,
+          0
+        ],
+        [
+          10,
+          26842,
+          13,
+          0
+        ],
+        [
+          10,
+          27156,
+          10,
+          0
+        ],
+        [
+          10,
+          31717,
+          3,
+          0
+        ],
+        [
+          10,
+          34134,
+          9,
+          1
+        ],
+        [
+          10,
+          47766,
+          4,
+          1
+        ],
+        [
+          10,
+          49235,
+          12,
+          1
+        ],
+        [
+          12,
+          3164,
+          7,
+          0
+        ],
+        [
+          12,
+          11175,
+          12,
+          0
+        ],
+        [
+          12,
+          15221,
+          2,
+          1
+        ],
+        [
+          12,
+          23390,
+          13,
+          0
+        ],
+        [
+          12,
+          25213,
+          11,
+          0
+        ]
+      ],
+      "total_rows": 32434490
+    }
+  },
+  "taobao": {
+    "user_behavior": {
+      "columns": [
+        "user_id",
+        "item_id",
+        "category_id",
+        "behavior_type",
+        "timestamp"
+      ],
+      "rows": [
+        [
+          69,
+          324,
+          4801426,
+          "pv",
+          1512294237
+        ],
+        [
+          69,
+          8486,
+          3381583,
+          "pv",
+          1511960099
+        ],
+        [
+          69,
+          106202,
+          2407396,
+          "pv",
+          1511673925
+        ],
+        [
+          69,
+          232683,
+          1080785,
+          "pv",
+          1511662342
+        ],
+        [
+          69,
+          261029,
+          4340213,
+          "pv",
+          1511702130
+        ],
+        [
+          69,
+          261029,
+          4340213,
+          "pv",
+          1511700455
+        ],
+        [
+          69,
+          261029,
+          4340213,
+          "pv",
+          1511671830
+        ],
+        [
+          69,
+          261029,
+          4340213,
+          "cart",
+          1511670876
+        ],
+        [
+          69,
+          261029,
+          4340213,
+          "pv",
+          1511670640
+        ],
+        [
+          69,
+          267663,
+          4801426,
+          "pv",
+          1512300279
+        ],
+        [
+          69,
+          323253,
+          3381583,
+          "pv",
+          1511959750
+        ],
+        [
+          69,
+          406143,
+          4801426,
+          "pv",
+          1512294357
+        ],
+        [
+          69,
+          460586,
+          3673501,
+          "pv",
+          1511958401
+        ],
+        [
+          69,
+          460586,
+          3673501,
+          "pv",
+          1511958341
+        ],
+        [
+          69,
+          670552,
+          4801426,
+          "pv",
+          1512299489
+        ],
+        [
+          69,
+          780365,
+          3381583,
+          "pv",
+          1512004523
+        ],
+        [
+          69,
+          780365,
+          3381583,
+          "pv",
+          1511960564
+        ],
+        [
+          69,
+          780365,
+          3381583,
+          "cart",
+          1511960060
+        ],
+        [
+          69,
+          824164,
+          4217906,
+          "pv",
+          1512300425
+        ],
+        [
+          69,
+          826964,
+          4170419,
+          "pv",
+          1511583070
+        ]
+      ],
+      "total_rows": 100150807
+    }
+  },
+  "product_samples": {
+    "products_sample": {
+      "columns": [
+        "upc",
+        "availability",
+        "category",
+        "description",
+        "detail_url",
+        "in_stock",
+        "price",
+        "price_excl_tax",
+        "price_incl_tax",
+        "product_type",
+        "rating",
+        "review_count",
+        "tax",
+        "title"
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "https://books.toscrape.com/catalogue/1000-places-to-see-before-you-die_1/index.html",
+          "True",
+          26.08,
+          null,
+          null,
+          "",
+          5.0,
+          null,
+          null,
+          "\"1,000 Places to See Before You Die\""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "https://books.toscrape.com/catalogue/1st-to-die-womens-murder-club-1_2/index.html",
+          "True",
+          53.98,
+          null,
+          null,
+          "",
+          1.0,
+          null,
+          null,
+          "1st to Die (Women's Murder Club #1)"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "https://books.toscrape.com/catalogue/a-spys-devotion-the-regency-spies-of-london-1_3/index.html",
+          "True",
+          16.97,
+          null,
+          null,
+          "",
+          5.0,
+          null,
+          null,
+          "A Spy's Devotion (The Regency Spies of London #1)"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "https://books.toscrape.com/catalogue/ajin-demi-human-volume-1-ajin-demi-human-1_4/index.html",
+          "True",
+          57.06,
+          null,
+          null,
+          "",
+          4.0,
+          null,
+          null,
+          "\"Ajin: Demi-Human, Volume 1 (Ajin: Demi-Human #1)\""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "https://books.toscrape.com/catalogue/alice-in-wonderland-alices-adventures-in-wonderland-1_5/index.html",
+          "True",
+          55.53,
+          null,
+          null,
+          "",
+          1.0,
+          null,
+          null,
+          "Alice in Wonderland (Alice's Adventures in Wonderland #1)"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "https://books.toscrape.com/catalogue/beyond-good-and-evil_6/index.html",
+          "True",
+          43.38,
+          null,
+          null,
+          "",
+          1.0,
+          null,
+          null,
+          "Beyond Good and Evil"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "https://books.toscrape.com/catalogue/bleach-vol-1-strawberry-and-the-soul-reapers-bleach-1_7/index.html",
+          "True",
+          34.65,
+          null,
+          null,
+          "",
+          5.0,
+          null,
+          null,
+          "\"Bleach, Vol. 1: Strawberry and the Soul Reapers (Bleach #1)\""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "https://books.toscrape.com/catalogue/blood-defense-samantha-brinkman-1_8/index.html",
+          "True",
+          20.3,
+          null,
+          null,
+          "",
+          3.0,
+          null,
+          null,
+          "Blood Defense (Samantha Brinkman #1)"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "https://books.toscrape.com/catalogue/bounty-colorado-mountain-7_9/index.html",
+          "True",
+          37.26,
+          null,
+          null,
+          "",
+          4.0,
+          null,
+          null,
+          "Bounty (Colorado Mountain #7)"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "https://books.toscrape.com/catalogue/bridget-joness-diary-bridget-jones-1_10/index.html",
+          "True",
+          29.82,
+          null,
+          null,
+          "",
+          1.0,
+          null,
+          null,
+          "Bridget Jones's Diary (Bridget Jones #1)"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "https://books.toscrape.com/catalogue/bright-lines_11/index.html",
+          "True",
+          39.07,
+          null,
+          null,
+          "",
+          5.0,
+          null,
+          null,
+          "Bright Lines"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "https://books.toscrape.com/catalogue/charitys-cross-charles-towne-belles-4_12/index.html",
+          "True",
+          41.24,
+          null,
+          null,
+          "",
+          1.0,
+          null,
+          null,
+          "Charity's Cross (Charles Towne Belles #4)"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "https://books.toscrape.com/catalogue/charlie-and-the-chocolate-factory-charlie-bucket-1_13/index.html",
+          "True",
+          22.85,
+          null,
+          null,
+          "",
+          3.0,
+          null,
+          null,
+          "Charlie and the Chocolate Factory (Charlie Bucket #1)"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "https://books.toscrape.com/catalogue/choosing-our-religion-the-spiritual-lives-of-americas-nones_14/index.html",
+          "True",
+          28.42,
+          null,
+          null,
+          "",
+          4.0,
+          null,
+          null,
+          "Choosing Our Religion: The Spiritual Lives of America's Nones"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "https://books.toscrape.com/catalogue/deep-under-walker-security-1_15/index.html",
+          "True",
+          47.09,
+          null,
+          null,
+          "",
+          5.0,
+          null,
+          null,
+          "Deep Under (Walker Security #1)"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "https://books.toscrape.com/catalogue/eat-pray-love_16/index.html",
+          "True",
+          51.32,
+          null,
+          null,
+          "",
+          3.0,
+          null,
+          null,
+          "\"Eat, Pray, Love\""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "https://books.toscrape.com/catalogue/emma_17/index.html",
+          "True",
+          32.93,
+          null,
+          null,
+          "",
+          2.0,
+          null,
+          null,
+          "Emma"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "https://books.toscrape.com/catalogue/fighting-fate-fighting-6_18/index.html",
+          "True",
+          39.24,
+          null,
+          null,
+          "",
+          3.0,
+          null,
+          null,
+          "Fighting Fate (Fighting #6)"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "https://books.toscrape.com/catalogue/forever-rockers-the-rocker-12_19/index.html",
+          "True",
+          28.8,
+          null,
+          null,
+          "",
+          3.0,
+          null,
+          null,
+          "Forever Rockers (The Rocker #12)"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "https://books.toscrape.com/catalogue/frankenstein_20/index.html",
+          "True",
+          38.0,
+          null,
+          null,
+          "",
+          2.0,
+          null,
+          null,
+          "Frankenstein"
+        ]
+      ],
+      "total_rows": 990
+    },
+    "jd_products": {
+      "columns": [
+        "url",
+        "name",
+        "price",
+        "shop",
+        "comments"
+      ],
+      "rows": [
+        [
+          "",
+          "¥6499",
+          null,
+          "",
+          null
+        ],
+        [
+          "",
+          "¥159",
+          null,
+          "",
+          null
+        ],
+        [
+          "",
+          "¥156",
+          null,
+          "",
+          null
+        ],
+        [
+          "",
+          "¥199",
+          null,
+          "",
+          null
+        ],
+        [
+          "",
+          "¥299",
+          null,
+          "",
+          null
+        ],
+        [
+          "",
+          "HIFI无损空间音效运动听歌游戏电竞长续航低延迟高颜值通话降噪苹果安卓通用入耳式蓝牙耳机 黑色顶配智能降噪超长待机续航智能触控低延迟云感佩戴",
+          null,
+          "",
+          null
+        ],
+        [
+          "",
+          "维肯（Viken）京东自营旗舰店",
+          null,
+          "",
+          null
+        ],
+        [
+          "",
+          "MICROKIA【2026最新款丨柏林之音】蓝牙耳机半入耳式无线超长续航高音质音乐运动通话降噪排行榜热卖第1名",
+          null,
+          "",
+          null
+        ],
+        [
+          "",
+          "迪士尼（Disney）真无线蓝牙耳机 入耳式游戏音乐超长续航耳机 2025新款情侣礼物 D29粉色安琪 适用于苹果华为小米",
+          null,
+          "",
+          null
+        ],
+        [
+          "",
+          "HIFI无损空间音效运动听歌游戏电竞长续航低延迟高颜值通话降噪苹果安卓通用入耳式蓝牙耳机 白色顶配智能降噪超长待机续航智能触控低延迟云感佩戴",
+          null,
+          "",
+          null
+        ],
+        [
+          "",
+          "维肯（Viken）京东自营旗舰店",
+          null,
+          "",
+          null
+        ],
+        [
+          "",
+          "【罗凡尼】最新耳饰耳机高颜值",
+          null,
+          "",
+          null
+        ],
+        [
+          "",
+          "纽曼（Newmine）2026新款AI实时翻译耳夹式蓝牙耳机骨传导概念不入耳开放式无线运动挂耳式跑步超长续航降噪高音质 绅士灰丨Ai同声翻译+杜比环绕音+超长续航 +云感佩戴+双重定向防漏音",
+          null,
+          "",
+          null
+        ],
+        [
+          "",
+          "迪士尼（Disney）漫威联名款蓝牙耳机高颜值机甲电竞游戏环绕音效无线耳机入耳式开学男生礼物 MR63黑豹",
+          null,
+          "",
+          null
+        ],
+        [
+          "",
+          "【热销TOP.1|降噪耳机入耳式】",
+          null,
+          "",
+          null
+        ],
+        [
+          "",
+          "【柏林之声丨降噪金榜第1名】",
+          null,
+          "",
+          null
+        ],
+        [
+          "",
+          "维肯（Viken）京东自营旗舰店",
+          null,
+          "",
+          null
+        ],
+        [
+          "",
+          "纽曼Newmine影音娱乐旗舰店",
+          null,
+          "",
+          null
+        ],
+        [
+          "",
+          "送男性朋友蓝牙耳机热卖榜第4名",
+          null,
+          "",
+          null
+        ],
+        [
+          "",
+          "OKSJ【2026最新款】蓝牙耳机耳夹式无线颈挂长续航久戴不痛通话降噪高音质跑步防水游戏适用苹果/小米",
+          null,
+          "",
+          null
+        ]
+      ],
+      "total_rows": 25
+    }
+  }
+}

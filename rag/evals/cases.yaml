@@ -1,0 +1,243 @@
+# RAG 评测用例集（30 条，每库 6 题，三档难度：单表聚合 / 多条件过滤 / 分组排序 TOP-N）
+# expected_value：与结果首行最后一列做相对误差比较（tolerance）
+# expected_text：与结果首行第一列做大小写不敏感子串匹配
+# 基准值全部由 scripts 标准 SQL 在 Doris 实测获得（2026-10-17）
+
+# ========== olist ==========
+- id: olist_gmv_delivered
+  db: olist
+  question: "olist 平台已交付订单的商品金额合计是多少"
+  expected_sql: "SELECT SUM(price) FROM olist.olist_order_item_wide WHERE order_status='delivered'"
+  expected_value: 13221498.11
+  tolerance: 0.01
+  tags: [aggregation, gmv]
+
+- id: olist_order_cnt
+  db: olist
+  question: "olist 一共有多少个订单"
+  expected_sql: "SELECT COUNT(DISTINCT order_id) FROM olist.olist_order_item_wide"
+  expected_value: 98667
+  tolerance: 0
+  tags: [aggregation, count]
+
+- id: olist_2017_delivered_orders
+  db: olist
+  question: "2017 年 olist 已交付的订单有多少个"
+  expected_sql: "SELECT COUNT(DISTINCT order_id) FROM olist.olist_order_item_wide WHERE order_status='delivered' AND YEAR(order_purchase_timestamp)=2017"
+  expected_value: 43428
+  tolerance: 0
+  tags: [filter, time, count]
+
+- id: olist_avg_delivery_days
+  db: olist
+  question: "olist 已交付订单的平均配送天数是多少"
+  expected_sql: "SELECT AVG(delivery_days) FROM olist.olist_order_item_wide WHERE order_status='delivered'"
+  expected_value: 9.14
+  tolerance: 0.02
+  tags: [filter, avg]
+
+- id: olist_top_category_sales
+  db: olist
+  question: "olist 销售额最高的商品类目是哪个"
+  expected_sql: "SELECT product_category_name_english, SUM(price) AS s FROM olist.olist_order_item_wide WHERE order_status='delivered' GROUP BY product_category_name_english ORDER BY s DESC LIMIT 1"
+  expected_text: "health_beauty"
+  tags: [topn, groupby]
+
+- id: olist_top_state_orders
+  db: olist
+  question: "olist 订单数最多的州是哪个"
+  expected_sql: "SELECT customer_state, COUNT(DISTINCT order_id) AS c FROM olist.olist_order_item_wide GROUP BY customer_state ORDER BY c DESC LIMIT 1"
+  expected_text: "SP"
+  tags: [topn, groupby]
+
+# ========== amazon ==========
+- id: amazon_review_cnt
+  db: amazon
+  question: "amazon 数据集一共有多少条评论"
+  expected_sql: "SELECT COUNT(*) FROM amazon.amazon_review_wide"
+  expected_value: 409961
+  tolerance: 0.0001
+  tags: [aggregation, count]
+
+- id: amazon_five_star_ratio
+  db: amazon
+  question: "amazon 评论的 5 星占比是多少"
+  expected_sql: "SELECT SUM(CASE WHEN score=5 THEN 1 ELSE 0 END)/COUNT(*) FROM amazon.amazon_review_wide"
+  expected_value: 0.6377
+  tolerance: 0.01
+  tags: [aggregation, ratio]
+
+- id: amazon_avg_score
+  db: amazon
+  question: "amazon 评论的平均评分是多少"
+  expected_sql: "SELECT AVG(score) FROM amazon.amazon_review_wide WHERE score IS NOT NULL"
+  expected_value: 4.1665
+  tolerance: 0.01
+  tags: [filter, avg]
+
+- id: amazon_avg_price_priced
+  db: amazon
+  question: "amazon 价格大于 0 的商品平均价格是多少"
+  expected_sql: "SELECT AVG(price) FROM amazon.amazon_review_wide WHERE price > 0"
+  expected_value: 25.23
+  tolerance: 0.02
+  tags: [filter, avg]
+
+- id: amazon_top_category_reviews
+  db: amazon
+  question: "amazon 评论数最多的非空类目是哪个"
+  expected_sql: "SELECT category_name, COUNT(*) AS c FROM amazon.amazon_review_wide GROUP BY category_name ORDER BY c DESC LIMIT 1"
+  expected_text: "Kitchen"
+  tags: [topn, groupby]
+
+- id: amazon_best_category_score
+  db: amazon
+  question: "amazon 评论数超过 100 的类目中，平均评分最高的类目是哪个"
+  expected_sql: "SELECT category_name, AVG(score) AS a FROM amazon.amazon_review_wide GROUP BY category_name HAVING COUNT(*)>100 ORDER BY a DESC LIMIT 1"
+  expected_text: "Home Appliances"
+  tags: [topn, groupby, having]
+
+# ========== instacart ==========
+- id: instacart_item_cnt
+  db: instacart
+  question: "instacart 数据集中订单商品项总数是多少"
+  expected_sql: "SELECT COUNT(*) FROM instacart.instacart_order_product_wide"
+  expected_value: 33819108
+  tolerance: 0
+  tags: [aggregation, count]
+
+- id: instacart_reorder_ratio
+  db: instacart
+  question: "instacart 的复购率是多少"
+  expected_sql: "SELECT SUM(reordered)/COUNT(*) FROM instacart.instacart_order_product_wide"
+  expected_value: 0.59
+  tolerance: 0.01
+  tags: [aggregation, ratio]
+
+- id: instacart_order_cnt
+  db: instacart
+  question: "instacart 一共有多少个订单"
+  expected_sql: "SELECT COUNT(DISTINCT order_id) FROM instacart.instacart_order_product_wide"
+  expected_value: 3346083
+  tolerance: 0
+  tags: [filter, count]
+
+- id: instacart_first_order_ratio
+  db: instacart
+  question: "instacart 首次下单的商品项占比是多少"
+  expected_sql: "SELECT SUM(is_first_order)/COUNT(*) FROM instacart.instacart_order_product_wide"
+  expected_value: 0.0614
+  tolerance: 0.05
+  tags: [filter, ratio]
+
+- id: instacart_top_product
+  db: instacart
+  question: "instacart 最热销的商品是什么"
+  expected_sql: "SELECT product_name, COUNT(*) AS c FROM instacart.instacart_order_product_wide GROUP BY product_name ORDER BY c DESC LIMIT 1"
+  expected_text: "Banana"
+  tags: [topn, groupby]
+
+- id: instacart_top_department
+  db: instacart
+  question: "instacart 商品项数最多的部门是哪个"
+  expected_sql: "SELECT department, COUNT(*) AS c FROM instacart.instacart_order_product_wide GROUP BY department ORDER BY c DESC LIMIT 1"
+  expected_text: "produce"
+  tags: [topn, groupby]
+
+# ========== taobao ==========
+- id: taobao_behavior_cnt
+  db: taobao
+  question: "淘宝用户行为数据一共有多少条"
+  expected_sql: "SELECT COUNT(*) FROM taobao.taobao_user_behavior_wide"
+  expected_value: 100150807
+  tolerance: 0
+  tags: [aggregation, count]
+
+- id: taobao_pv_buy_ratio
+  db: taobao
+  question: "淘宝 PV 到购买的转化率是多少"
+  expected_sql: "SELECT SUM(is_buy)/SUM(is_pv) FROM taobao.taobao_user_behavior_wide"
+  expected_value: 0.022469
+  tolerance: 0.01
+  tags: [aggregation, ratio, funnel]
+
+- id: taobao_distinct_users
+  db: taobao
+  question: "淘宝数据集覆盖了多少个独立用户"
+  expected_sql: "SELECT COUNT(DISTINCT user_id) FROM taobao.taobao_user_behavior_wide"
+  expected_value: 987994
+  tolerance: 0
+  tags: [filter, count, distinct]
+
+- id: taobao_pv_1125
+  db: taobao
+  question: "2017 年 11 月 25 日淘宝的 PV 是多少"
+  expected_sql: "SELECT SUM(is_pv) FROM taobao.taobao_user_behavior_wide WHERE behavior_date='2017-11-25'"
+  expected_value: 9353423
+  tolerance: 0.01
+  tags: [filter, time]
+
+- id: taobao_top_category_behaviors
+  db: taobao
+  question: "淘宝行为数最多的商品类目 ID 是多少"
+  expected_sql: "SELECT category_id, COUNT(*) AS c FROM taobao.taobao_user_behavior_wide GROUP BY category_id ORDER BY c DESC LIMIT 1"
+  expected_text: "4756105"
+  tags: [topn, groupby]
+
+- id: taobao_top_buy_date
+  db: taobao
+  question: "淘宝购买量最高的是哪一天"
+  expected_sql: "SELECT behavior_date, SUM(is_buy) AS b FROM taobao.taobao_user_behavior_wide GROUP BY behavior_date ORDER BY b DESC LIMIT 1"
+  expected_text: "2017-12-02"
+  tags: [topn, groupby, time]
+
+# ========== product_samples ==========
+# 注：jd_products 为爬虫小样本（25 行），price/shop/comments 列因 CSV 字段错位基本为空，
+# 用例围绕实际可查的 name/url 字段设计，同时覆盖数据质量认知。
+- id: jd_product_cnt
+  db: product_samples
+  question: "product_samples 里有多少条商品样本"
+  expected_sql: "SELECT COUNT(*) FROM product_samples.jd_products"
+  expected_value: 25
+  tolerance: 0
+  tags: [aggregation, count]
+
+- id: jd_name_not_null
+  db: product_samples
+  question: "京东商品样本中有商品名称的记录有多少条"
+  expected_sql: "SELECT COUNT(*) FROM product_samples.jd_products WHERE name IS NOT NULL AND name != ''"
+  expected_value: 25
+  tolerance: 0
+  tags: [aggregation, count]
+
+- id: jd_name_bluetooth
+  db: product_samples
+  question: "京东商品样本中名称包含蓝牙的商品有多少个"
+  expected_sql: "SELECT COUNT(*) FROM product_samples.jd_products WHERE name LIKE '%蓝牙%'"
+  expected_value: 12
+  tolerance: 0
+  tags: [filter, like]
+
+- id: jd_name_earphone
+  db: product_samples
+  question: "京东商品样本中名称包含耳机的商品有多少个"
+  expected_sql: "SELECT COUNT(*) FROM product_samples.jd_products WHERE name LIKE '%耳机%'"
+  expected_value: 14
+  tolerance: 0
+  tags: [filter, like]
+
+- id: jd_name_flagship
+  db: product_samples
+  question: "京东商品样本中名称包含旗舰店的记录有多少条"
+  expected_sql: "SELECT COUNT(*) FROM product_samples.jd_products WHERE name LIKE '%旗舰店%'"
+  expected_value: 4
+  tolerance: 0
+  tags: [filter, like]
+
+- id: jd_max_name_len
+  db: product_samples
+  question: "京东商品样本中最长的商品名称有多少个字符"
+  expected_sql: "SELECT MAX(CHAR_LENGTH(name)) FROM product_samples.jd_products"
+  expected_value: 96
+  tolerance: 0
+  tags: [topn, max]

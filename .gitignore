@@ -1,0 +1,48 @@
+# 数据
+data/raw/
+data/processed/
+*.duckdb
+
+# 模型与向量库
+models/chroma_db/
+models/*.bin
+
+# 安装包
+*.tar.gz
+
+# 调试产物
+chrome_profile/
+scripts/debug/
+jd_*debug*
+jd_*_page*.png
+jd_*_search*.png
+*_debug.json
+
+# Python
+__pycache__/
+*.pyc
+.idea/
+
+# 密钥
+.env
+
+# 京东采集脚本（针对具体站点的爬虫代码，开源版从略，本地保留）
+scripts/02_product_spider.py
+scripts/03_jd_spider.py
+scripts/04_jd_cookie_exporter.py
+scripts/05_jd_debug.py
+scripts/06_jd_api_capture.py
+scripts/07_jd_api_debug.py
+scripts/08_jd_dom_analyze.py
+scripts/09_jd_pager_debug.py
+
+# 独立部署的网站仓库（portfolio，单独管理）
+website/
+
+# 根目录本地草稿脚本（硬编码连接/京东调试，开源从略）
+analyze_dom.py
+browse_data.py
+doris_connect_example.py
+export_samples.py
+generate_browser_html.py
+jd_drission_page.html

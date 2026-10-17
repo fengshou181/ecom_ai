@@ -1,0 +1,44 @@
+{
+  "checked_at": "2026-10-18 00:01:05",
+  "tables": {
+    "olist.olist_order_item_wide": {
+      "rows": 112651,
+      "null_rates": {
+        "order_id": 0.0,
+        "price": 9e-06,
+        "order_status": 0.0,
+        "order_purchase_timestamp": 9e-06
+      }
+    },
+    "amazon.amazon_review_wide": {
+      "rows": 409961,
+      "null_rates": {
+        "review_id": 2e-06,
+        "score": 2e-06
+      }
+    },
+    "instacart.instacart_order_product_wide": {
+      "rows": 33819108,
+      "null_rates": {
+        "order_id": 0.0,
+        "product_id": 0.0,
+        "product_name": 0.000636
+      }
+    },
+    "taobao.taobao_user_behavior_wide": {
+      "rows": 100150807,
+      "null_rates": {
+        "user_id": 0.0,
+        "item_id": 0.0,
+        "behavior_type": 0.0,
+        "behavior_date": 3e-06
+      }
+    },
+    "product_samples.jd_products": {
+      "rows": 25,
+      "null_rates": {
+        "name": 0.0
+      }
+    }
+  }
+}
