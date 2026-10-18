@@ -45,7 +45,11 @@ CHECKS = {
     },
 }
 
-SNAPSHOT = Path(__file__).resolve().parent.parent / "docs" / "health" / "last_snapshot.json"
+# last_snapshot.json = 最近一次观测（每次运行都更新，用于审计）
+# baseline.json = 经批准的对比基线（只有显式 --approve 才迁移，告警不会自动推进基线）
+_HEALTH_DIR = Path(__file__).resolve().parent.parent / "docs" / "health"
+SNAPSHOT = _HEALTH_DIR / "last_snapshot.json"
+BASELINE = _HEALTH_DIR / "baseline.json"
 
 
 def collect() -> dict:
@@ -63,11 +67,12 @@ def collect() -> dict:
 
 
 def main() -> int:
+    approve = "--approve" in sys.argv
     snap = collect()
     problems, notes = [], []
 
-    if SNAPSHOT.exists():
-        prev = json.loads(SNAPSHOT.read_text(encoding="utf-8"))
+    if BASELINE.exists():
+        prev = json.loads(BASELINE.read_text(encoding="utf-8"))
         for full, cur in snap["tables"].items():
             old = prev["tables"].get(full)
             if not old:
@@ -103,7 +108,18 @@ def main() -> int:
 
     SNAPSHOT.parent.mkdir(parents=True, exist_ok=True)
     SNAPSHOT.write_text(json.dumps(snap, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"快照已更新: {SNAPSHOT}")
+    print(f"观测快照已更新: {SNAPSHOT}")
+
+    # 基线迁移：仅在首次运行或显式 --approve 时进行；告警状态下基线保持不变
+    if not BASELINE.exists():
+        BASELINE.write_text(json.dumps(snap, ensure_ascii=False, indent=2), encoding="utf-8")
+        print(f"已建立批准基线: {BASELINE}")
+    elif approve:
+        BASELINE.write_text(json.dumps(snap, ensure_ascii=False, indent=2), encoding="utf-8")
+        print(f"基线已经 --approve 迁移: {BASELINE}")
+    elif problems:
+        print("告警未解除，对比基线保持不变；确认数据变更符合预期后执行 --approve 迁移基线")
+
     return 1 if problems else 0
 
 

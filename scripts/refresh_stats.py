@@ -39,7 +39,9 @@ UPDATE_CALENDAR = [
     "### 日常巡检",
     "",
     "`conda run -n pds python scripts/health_check.py`：宽表行数异动 + 关键字段空值率告警，",
-    "基线快照在 docs/health/last_snapshot.json，退出码 0=健康 1=有告警。",
+    "对比基线在 docs/health/baseline.json（经批准的基线，告警时不会自动推进），",
+    "最近观测快照在 docs/health/last_snapshot.json（每次运行都更新，用于审计）。",
+    "确认数据变更符合预期后执行 `health_check.py --approve` 迁移基线。退出码 0=健康 1=有告警。",
     "",
 ]
 

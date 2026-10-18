@@ -331,12 +331,27 @@ def main():
     js = ("// 由 scripts/16_refresh_dashboard_data.py 自动生成，请勿手改\n"
           "// 重新生成: conda run -n pds python scripts/16_refresh_dashboard_data.py\n"
           "window.DASHBOARD_DATA = " + json.dumps(data, ensure_ascii=False, indent=2) + ";\n")
-    with open(OUT_PATH, "w", encoding="utf-8") as f:
+
+    # 校验失败：保留最后有效产物，不覆盖正式文件，差异落单独日志
+    if diff:
+        log_path = OUT_PATH + ".diff.log"
+        with open(log_path, "w", encoding="utf-8") as f:
+            f.write(f"校验失败 {datetime.now():%Y-%m-%d %H:%M:%S}，{diff}/{len(checks)} 项不一致\n")
+            for name, actual, expect in checks:
+                f.write(f"{name}\n  实际={actual}\n  参考={expect}\n")
+        print(f"\n校验失败（{diff} 项），已保留最后有效文件: {OUT_PATH}")
+        print(f"差异明细: {log_path}")
+        sys.exit(1)
+
+    # 原子发布：先写临时文件再替换，避免半截文件进入部署
+    tmp_path = OUT_PATH + ".tmp"
+    with open(tmp_path, "w", encoding="utf-8") as f:
         f.write(js)
+    os.replace(tmp_path, OUT_PATH)
 
     print(f"\n已生成 {OUT_PATH}")
-    print(f"核对结果: {len(checks) - diff}/{len(checks)} 一致, {diff} 个 DIFF")
-    sys.exit(1 if diff else 0)
+    print(f"核对结果: {len(checks)}/{len(checks)} 一致")
+    sys.exit(0)
 
 
 if __name__ == "__main__":

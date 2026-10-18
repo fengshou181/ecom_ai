@@ -108,11 +108,19 @@
 
 - id: instacart_reorder_ratio
   db: instacart
-  question: "instacart 的复购率是多少"
+  question: "instacart 商品项重复购买占比是多少"
   expected_sql: "SELECT SUM(reordered)/COUNT(*) FROM instacart.instacart_order_product_wide"
   expected_value: 0.59
   tolerance: 0.01
   tags: [aggregation, ratio]
+
+- id: instacart_user_repurchase_rate
+  db: instacart
+  question: "instacart 用户复购率是多少（购买订单数>=2 的用户占比）"
+  expected_sql: "SELECT AVG(order_cnt >= 2) FROM (SELECT user_id, COUNT(DISTINCT order_id) AS order_cnt FROM instacart.instacart_order_product_wide GROUP BY user_id) t"
+  expected_value: 1.0
+  tolerance: 0.01
+  tags: [aggregation, ratio, user_level, hard]
 
 - id: instacart_order_cnt
   db: instacart

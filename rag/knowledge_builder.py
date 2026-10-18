@@ -8,7 +8,7 @@ import schema_extractor as se
 
 BUSINESS_DOCS = [
     "数据集背景: olist 是巴西电商 Olist 两年真实订单数据; amazon 是亚马逊商品评论; instacart 是生鲜杂货订单; taobao 是淘宝用户行为(PV/收藏/加购/购买); product_samples 是爬虫采集的京东商品样本。",
-    "口径定义: 淘宝 PV 到购买转化率 = buy 行为数 / pv 行为数; GMV = 商品价格 price 求和(仅统计 delivered 订单); 复购率 = 购买次数>=2 的用户占比。",
+    "口径定义: 淘宝 PV 到购买转化率 = buy 行为数 / pv 行为数; 交付 GMV = delivered 订单的 price 求和(不含运费); 用户复购率 = 购买订单数>=2 的用户占比(用户粒度), 商品项重复购买占比 = SUM(reordered)/COUNT(*)(商品项粒度), 两者不同; 完整口径见 docs/METRICS.md 指标字典。",
     "可回答范围: 各数据集的销售/GMV/趋势、用户行为转化、评分分布、热销商品、交付时长等统计问题。系统会生成 SQL 查询 Apache Doris 宽表后回答。",
 ]
 
@@ -22,6 +22,8 @@ EXAMPLE_SQL_TEMPLATES = [
      "WHERE order_status = 'delivered' AND delivery_days IS NOT NULL"),
     ("olist 已交付订单的 GMV 合计怎么算?",
      "SELECT SUM(price) FROM {olist} WHERE order_status = 'delivered'"),
+    ("olist 已交付订单的客单价怎么算?（订单级口径：SUM(price)/COUNT(DISTINCT order_id)，不能用 AVG(price)）",
+     "SELECT SUM(price) / COUNT(DISTINCT order_id) AS aov FROM {olist} WHERE order_status = 'delivered'"),
     ("olist 一共有多少个订单?（注意：一行是一个订单商品项，订单数必须 COUNT(DISTINCT order_id)）",
      "SELECT COUNT(DISTINCT order_id) FROM {olist}"),
     ("olist 2017 年已交付的订单有多少个?",
@@ -40,8 +42,11 @@ EXAMPLE_SQL_TEMPLATES = [
      "SELECT category_name, AVG(score) AS a FROM {amazon} "
      "GROUP BY category_name HAVING COUNT(*) > 100 ORDER BY a DESC LIMIT 1"),
     # instacart
-    ("instacart 复购率怎么算?",
+    ("instacart 商品项重复购买占比怎么算?（商品项粒度，不是用户复购率）",
      "SELECT SUM(reordered) / COUNT(*) AS reorder_ratio FROM {instacart}"),
+    ("instacart 用户复购率怎么算?（用户粒度：购买订单数>=2 的用户占比，必须用嵌套子查询按 user_id 聚合）",
+     "SELECT AVG(order_cnt >= 2) AS repurchase_rate FROM "
+     "(SELECT user_id, COUNT(DISTINCT order_id) AS order_cnt FROM {instacart} GROUP BY user_id) t"),
     ("instacart 最热销的商品?",
      "SELECT product_name, COUNT(*) AS c FROM {instacart} "
      "GROUP BY product_name ORDER BY c DESC LIMIT 1"),
@@ -65,8 +70,10 @@ EXAMPLE_SQL_TEMPLATES = [
      "SELECT COUNT(*) FROM {jd}"),
     ("京东商品样本中名称包含某关键词的商品数?（模糊匹配用 LIKE '%关键词%'）",
      "SELECT COUNT(*) FROM {jd} WHERE name LIKE '%耳机%'"),
-    ("京东商品样本中最长商品名的字符数?",
-     "SELECT MAX(LENGTH(name)) FROM {jd}"),
+    ("京东商品样本中最长商品名的字符数?（用 product_samples.jd_products 的 name 字段，字符数用 CHAR_LENGTH；不要用 olist 的 product_name_lenght）",
+     "SELECT MAX(CHAR_LENGTH(name)) FROM {jd}"),
+    ("京东商品名称的字符长度怎么统计?（京东=jd_products.name，字符数=CHAR_LENGTH）",
+     "SELECT MAX(CHAR_LENGTH(name)) AS max_chars, AVG(CHAR_LENGTH(name)) AS avg_chars FROM {jd}"),
 ]
 
 
