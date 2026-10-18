@@ -29,9 +29,14 @@ def query(sql: str) -> pd.DataFrame:
         )
     try:
         with conn:
-            with conn.cursor() as cur:
+            # SSCursor 流式读取：避免默认游标在 execute 时把全部结果一次性拉进内存
+            with conn.cursor(pymysql.cursors.SSCursor) as cur:
                 cur.execute(sql)
-                rows = cur.fetchall()
+                rows = cur.fetchmany(config.SQL_MAX_RESULT_ROWS + 1)
+                if len(rows) > config.SQL_MAX_RESULT_ROWS:
+                    raise RuntimeError(
+                        f"结果行数超过客户端预算 {config.SQL_MAX_RESULT_ROWS}，已中止读取"
+                    )
                 cols = [d[0] for d in cur.description] if cur.description else []
         return pd.DataFrame(rows, columns=cols)
     except Exception as e:

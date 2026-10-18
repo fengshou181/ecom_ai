@@ -30,7 +30,9 @@ CHROMA_COLLECTION = "ecom_schema"
 
 # 检索与执行
 RETRIEVE_TOP_K = 6
-SQL_DEFAULT_LIMIT = 1000
+SQL_DEFAULT_LIMIT = 1000      # 模型未写 LIMIT 时补的默认值
+SQL_MAX_LIMIT = 1000          # 外层 LIMIT 硬上限（超出封顶）
+SQL_MAX_RESULT_ROWS = 100000  # 客户端读取行数预算（兜底防内存耗尽）
 QUERY_TIMEOUT_SECONDS = 30
 SQL_MAX_RETRIES = 2
 
